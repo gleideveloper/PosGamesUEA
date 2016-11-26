@@ -1,0 +1,470 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>StarGuardians</name>
+    <description>Clone Game at Galaxian</description>
+    <version>1.0.0.0</version>
+    <author>Gleides, Jeferson e Josué</author>
+    <author-email></author-email>
+    <author-website>https://github.com/gleidesigner/GameGalaxian</author-website>
+    <app-id>uea.ludus.starguardians</app-id>
+    <unique-id>2f8wdwcxod6jm</unique-id>
+    <saved-with-version>23900</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>900</width>
+        <height>1024</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="enemy" sid="590497801619300">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="5" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="883568979513722" speed="0">
+                    <frame duration="1" hotspotX="0.494624" hotspotY="1.09524" original-source="E:\games\GameGalaxian\assets\enemy\inimigo 1.png">
+                        <collision-poly>
+                            <point x="0.301075" y="0.333333" />
+                            <point x="0.494624" y="0.0595238" />
+                            <point x="0.698925" y="0.333333" />
+                            <point x="0.698925" y="0.666667" />
+                            <point x="0.494624" y="0.857143" />
+                            <point x="0.301075" y="0.666667" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.505376" hotspotY="0.5" original-source="E:\games\GameGalaxian\assets\enemy\inimigo 2.png" />
+                    <frame duration="1" hotspotX="0.505376" hotspotY="0.5" original-source="E:\games\GameGalaxian\assets\enemy\inimigo 3.png" />
+                    <frame duration="1" hotspotX="0.505376" hotspotY="0.5" original-source="E:\games\GameGalaxian\assets\enemy\inimigo 4.png" />
+                    <frame duration="1" hotspotX="0.505376" hotspotY="0.5" original-source="E:\games\GameGalaxian\assets\enemy\inimigo 5.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Spaceship" sid="458746501123745">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="Whether Enemies can destroy the Spaceship" name="isVulnerable" sid="245781838496989" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="8Direction" sid="705548203370333">
+                    <behavior id="EightDir" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="589207153721336">
+                    <behavior id="scrollto" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="110623915250439">
+                    <behavior id="bound" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="parado" pingpong="0" repeatcount="1" repeatto="0" sid="765320133190536" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507042" original-source="E:\games\GameGalaxian\assets\player\frente.png">
+                        <image-point name="LaserLeft" x="0.3125" y="0.0985916" />
+                        <image-point name="LaserRight" x="0.705357" y="0.0985916" />
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="esquerda" pingpong="0" repeatcount="1" repeatto="0" sid="318031693213815" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507042" original-source="E:\games\GameGalaxian\assets\player\esq.png">
+                        <collision-poly>
+                            <point x="0.223214" y="0.352113" />
+                            <point x="0.5" y="0.197183" />
+                            <point x="0.803571" y="0.492958" />
+                            <point x="0.9375" y="0.901408" />
+                            <point x="0.5" y="0.802817" />
+                            <point x="0.107143" y="0.830986" />
+                            <point x="0.151786" y="0.492958" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="direita" pingpong="0" repeatcount="1" repeatto="0" sid="133198631998906" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507042" original-source="E:\games\GameGalaxian\assets\player\dir.png">
+                        <collision-poly>
+                            <point x="0.258929" y="0.408451" />
+                            <point x="0.5" y="0.183099" />
+                            <point x="0.767857" y="0.366197" />
+                            <point x="0.839286" y="0.492958" />
+                            <point x="0.901786" y="0.84507" />
+                            <point x="0.5" y="0.690141" />
+                            <point x="0.0535714" y="0.915493" />
+                            <point x="0.1875" y="0.492958" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Keyboard" sid="619660877721788">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="Laser" sid="111070517970394">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="445541935322157">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="DestroyOutsideLayout" sid="143196790478245">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="667199301798095" speed="5">
+                    <frame duration="1" hotspotX="0.113636" hotspotY="0.578947" original-source="E:\games\GameGalaxian\assets\player\sprite-tiro1.png">
+                        <collision-poly>
+                            <point x="0.981481" y="0.111111" />
+                            <point x="1" y="0.444444" />
+                            <point x="0.981481" y="0.888889" />
+                            <point x="0.5" y="0.666667" />
+                            <point x="0.0555556" y="0.666667" />
+                            <point x="0" y="0.444444" />
+                            <point x="0.0555556" y="0.333333" />
+                            <point x="0.5" y="0.333333" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Starfield" sid="268334470754115">
+            <plugin id="TiledBg" />
+            <texture original-source="E:\games\GameGalaxian\assets\background\Startfield_512x512-2.png" />
+        </object-type>
+        <object-type name="Scroller" sid="482287921740739">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="110142257279108">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="192248278811330">
+                    <behavior id="scrollto" />
+                </behavior-type>
+                <behavior-type name="DestroyOutsideLayout" sid="781679838071771">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="542183149094234" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Meteor" sid="392575729636093">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="826663109711599">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="8" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="776012763354467" speed="3">
+                    <frame duration="1" hotspotX="0.504951" hotspotY="0.5" original-source="E:\games\GameGalaxian\assets\enemy\meteorBrown_big1.png">
+                        <collision-poly>
+                            <point x="0.128713" y="0.154762" />
+                            <point x="0.49505" y="0.0119048" />
+                            <point x="0.841584" y="0.190476" />
+                            <point x="0.990099" y="0.5" />
+                            <point x="0.861386" y="0.833333" />
+                            <point x="0.49505" y="0.892857" />
+                            <point x="0.148515" y="0.821429" />
+                            <point x="0.029703" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504951">
+                        <collision-poly>
+                            <point x="0.845238" y="0.128713" />
+                            <point x="0.988095" y="0.49505" />
+                            <point x="0.809524" y="0.841584" />
+                            <point x="0.5" y="0.990099" />
+                            <point x="0.166667" y="0.861386" />
+                            <point x="0.107143" y="0.49505" />
+                            <point x="0.178571" y="0.148515" />
+                            <point x="0.5" y="0.029703" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.49505" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.871287" y="0.845238" />
+                            <point x="0.504951" y="0.988095" />
+                            <point x="0.158416" y="0.809524" />
+                            <point x="0.00990099" y="0.5" />
+                            <point x="0.138614" y="0.166667" />
+                            <point x="0.504951" y="0.107143" />
+                            <point x="0.851485" y="0.178571" />
+                            <point x="0.970297" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.49505" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.871287" y="0.845238" />
+                            <point x="0.504951" y="0.988095" />
+                            <point x="0.158416" y="0.809524" />
+                            <point x="0.00990099" y="0.5" />
+                            <point x="0.138614" y="0.166667" />
+                            <point x="0.504951" y="0.107143" />
+                            <point x="0.851485" y="0.178571" />
+                            <point x="0.970297" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.49505">
+                        <collision-poly>
+                            <point x="0.154762" y="0.871287" />
+                            <point x="0.011905" y="0.504951" />
+                            <point x="0.190476" y="0.158416" />
+                            <point x="0.5" y="0.00990099" />
+                            <point x="0.833333" y="0.138614" />
+                            <point x="0.892857" y="0.504951" />
+                            <point x="0.821429" y="0.851485" />
+                            <point x="0.5" y="0.970297" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504951" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.128713" y="0.154762" />
+                            <point x="0.495049" y="0.011905" />
+                            <point x="0.841584" y="0.190476" />
+                            <point x="0.990099" y="0.5" />
+                            <point x="0.861386" y="0.833333" />
+                            <point x="0.495049" y="0.892857" />
+                            <point x="0.148515" y="0.821429" />
+                            <point x="0.029703" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504951">
+                        <collision-poly>
+                            <point x="0.845238" y="0.128713" />
+                            <point x="0.988095" y="0.495049" />
+                            <point x="0.809524" y="0.841584" />
+                            <point x="0.5" y="0.990099" />
+                            <point x="0.166667" y="0.861386" />
+                            <point x="0.107143" y="0.495049" />
+                            <point x="0.178571" y="0.148515" />
+                            <point x="0.5" y="0.029703" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.49505" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.871287" y="0.845238" />
+                            <point x="0.504951" y="0.988095" />
+                            <point x="0.158416" y="0.809524" />
+                            <point x="0.00990099" y="0.5" />
+                            <point x="0.138614" y="0.166667" />
+                            <point x="0.504951" y="0.107143" />
+                            <point x="0.851485" y="0.178571" />
+                            <point x="0.970297" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="MeteorParticles" sid="242922594787208">
+            <plugin id="Particles" />
+            <texture original-source="E:\games\GameGalaxian\assets\enemy\meteorBrown_tiny2.png" />
+        </object-type>
+        <object-type name="Explosion" sid="325943760214007">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="6" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="695561698710415" speed="10">
+                    <frame duration="1" hotspotX="0.505376" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.505376" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.505376" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.505376" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.505376" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.505376" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="LaserEnemy" sid="593251299919005">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="763706727881333">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="DestroyOutsideLayout" sid="494898097790543">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="224585686620136" speed="5">
+                    <frame duration="1" hotspotX="-0.0185185" hotspotY="0.444444" original-source="E:\games\GameGalaxian\assets\enemy\laserRed01.png">
+                        <collision-poly>
+                            <point x="0.981481" y="0.111111" />
+                            <point x="1" y="0.444444" />
+                            <point x="0.981481" y="0.888889" />
+                            <point x="0.5" y="0.666667" />
+                            <point x="0.0555556" y="0.666667" />
+                            <point x="0" y="0.444444" />
+                            <point x="0.0555556" y="0.333333" />
+                            <point x="0.5" y="0.333333" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BigBoss" sid="305329638759633">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="612121713926335" speed="5">
+                    <frame duration="1" hotspotX="0.501736" hotspotY="0.922619" original-source="E:\games\GameGalaxian\assets\enemy\boss.png">
+                        <collision-poly>
+                            <point x="0.116319" y="0.39881" />
+                            <point x="0.5" y="0.154762" />
+                            <point x="0.883681" y="0.39881" />
+                            <point x="0.998264" y="0.5" />
+                            <point x="0.934028" y="0.77381" />
+                            <point x="0.5" y="0.863095" />
+                            <point x="0.0659722" y="0.77381" />
+                            <point x="0.00173611" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SpaceStars" sid="866568621255531">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="165564361523170" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Workspace\GameGalaxian\bg2.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="HealthBackground" sid="943719503244865">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="801719514468925" speed="5">
+                    <frame duration="1" hotspotX="0.502041" hotspotY="0.5" original-source="C:\Workspace\GameGalaxian\bg-score.png">
+                        <collision-poly>
+                            <point x="0.0653061" y="0.16" />
+                            <point x="0.497959" y="0.04" />
+                            <point x="0.971429" y="0.07" />
+                            <point x="0.983673" y="0.5" />
+                            <point x="0.971429" y="0.93" />
+                            <point x="0.497959" y="0.96" />
+                            <point x="0.142857" y="0.65" />
+                            <point x="0.0653061" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Health" sid="280100348582041">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Workspace\GameGalaxian\assets\player\Health.png" />
+        </object-type>
+        <object-type name="ScoreBoard" sid="234169503444504">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Audio" sid="129377226544155">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="ExplosionParticles" sid="842643748207333">
+            <plugin id="Particles" />
+            <texture original-source="E:\games\GameGalaxian\assets\explosion\playerShip1_damage1.png" />
+        </object-type>
+        <object-type name="Sprite" sid="107869264580932">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="331073454202332" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Dock" sid="298453541505880">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="295004741942098" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BigBossLaser" sid="356749857478562">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="576026569465619">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="DestroyOutsideLayout" sid="873755625046340">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="523526517527591" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0.512195" />
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Space.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Space Event Sheet.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="1" />
+        <global-instance type="Audio" uid="35">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
+    </global-instances>
+    <sounds-folder>
+        <file name="sfx_laser1.ogg" />
+        <file name="sfx_laser2.ogg" />
+        <file name="sfx_lose.ogg" />
+        <file name="sfx_shieldDown.ogg" />
+        <file name="sfx_shieldUp.ogg" />
+        <file name="sfx_twoTone.ogg" />
+        <file name="sfx_zap.ogg" />
+        <file name="[Trap] - Aero Chord - Surface [Monstercat Release].ogg" />
+    </sounds-folder>
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

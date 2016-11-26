@@ -1,0 +1,699 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Space Event Sheet</name>
+    <events>
+        <comment>Initial game settings</comment>
+        <variable comment="Track the player&apos;s score" constant="0" name="Score" sid="890882203533817" static="0" type="number">0</variable>
+        <variable comment="Tracks number of lives player has left" constant="0" name="Health" sid="699964021044717" static="0" type="number">3</variable>
+        <variable comment="Qty shoots in big boss" constant="0" name="Shots" sid="979788758622695" static="0" type="number">0</variable>
+        <event-block sid="291653569727723">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="471539680968311" type="System" />
+            </conditions>
+            <actions>
+                <action id="33" name="Stop all" sid="523519796134517" type="Audio" />
+                <action id="5" name="Set web font" sid="181840449290906" type="ScoreBoard">
+                    <param id="0" name="Family name">&quot;Share Tech Mono&quot;</param>
+                    <param id="1" name="CSS URL">&quot;http://fonts.googleapis.com/css?family=Share+Tech+Mono&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="541551187707592" type="ScoreBoard">
+                    <param id="0" name="Text">&quot;Score: &quot; &amp; Score</param>
+                </action>
+                <action behavior="8Direction" id="3" name="Set speed" sid="868212402694634" type="Spaceship">
+                    <param id="0" name="Speed">100</param>
+                </action>
+                <action id="-8" name="Set angle" sid="374937426241543" type="Scroller">
+                    <param id="0" name="Angle">270</param>
+                </action>
+                <action behavior="ScrollTo" id="1" name="Set enabled" sid="819056040910536" type="Scroller">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action id="-5" name="Set width" sid="650694024229593" type="Health">
+                    <param id="0" name="Width">Health * 50</param>
+                </action>
+                <action id="0" name="Play" sid="859753384244940" type="Audio">
+                    <param id="0" name="Audio file">[Trap] - Aero Chord - Surface [Monstercat Release]</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="905774007016638">
+            <conditions>
+                <condition id="2" name="Key is down" sid="709184190785577" type="Keyboard">
+                    <param id="0" name="Key">37 (Left arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="175160800530892" type="Spaceship">
+                    <param id="0" name="X">Self.X-8</param>
+                </action>
+                <action id="4" name="Set animation" sid="445965410539223" type="Spaceship">
+                    <param id="0" name="Animation">&quot;esquerda&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="249199902030997">
+            <conditions>
+                <condition id="2" name="Key is down" sid="306087642286089" type="Keyboard">
+                    <param id="0" name="Key">39 (Right arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="219025797661699" type="Spaceship">
+                    <param id="0" name="X">Self.X+8</param>
+                </action>
+                <action id="4" name="Set animation" sid="187471500508665" type="Spaceship">
+                    <param id="0" name="Animation">&quot;direita&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="641837641461956">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="654242569686399" type="Keyboard">
+                    <param id="0" name="Key">32 (Space)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="957034807975345" type="Spaceship">
+                    <param id="0" name="Object">Laser</param>
+                    <param id="1" name="Layer">&quot;content&quot;</param>
+                    <param id="2" name="Image point">&quot;LaserLeft&quot;</param>
+                </action>
+                <action behavior="Bullet" id="3" name="Set angle of motion" sid="651212374145654" type="Laser">
+                    <param id="0" name="Angle">270</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="501474512692598" type="Spaceship">
+                    <param id="0" name="Object">Laser</param>
+                    <param id="1" name="Layer">&quot;content&quot;</param>
+                    <param id="2" name="Image point">&quot;LaserRight&quot;</param>
+                </action>
+                <action id="-8" name="Set angle" sid="185752284832313" type="Laser">
+                    <param id="0" name="Angle">270</param>
+                </action>
+                <action id="0" name="Play" sid="325452019912710" type="Audio">
+                    <param id="0" name="Audio file">sfx_laser1</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="200864343734216">
+            <conditions>
+                <condition id="7" name="On any key released" sid="314917540711484" type="Keyboard" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="374424570400672" type="Spaceship">
+                    <param id="0" name="Animation">&quot;parado&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="714807008550127">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="243664592534315" type="System" />
+            </conditions>
+            <actions>
+                <action id="-6" name="Scroll to Y" sid="380325591040082" type="System">
+                    <param id="0" name="Y">scrolly + (16 * dt)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="900366373156297">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="246380161683277" type="System" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Set Y" sid="554452000251307" type="Starfield">
+                    <param id="0" name="Y">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="924890894822325">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="650626961855287" type="System">
+                    <param id="0" name="First value">Spaceship.Y</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Second value">Scroller.Y +600</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Set Y" sid="838343327364043" type="Spaceship">
+                    <param id="0" name="Y">Scroller.Y + 600</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="247155373821365">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="334303156093045" type="System">
+                    <param id="0" name="First value">Spaceship.Y</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Second value">Scroller.Y</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Set Y" sid="863752360704447" type="Spaceship">
+                    <param id="0" name="Y">Scroller.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Create meteor and enemy laser</comment>
+        <event-block sid="305740979276443">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="574128358069057" type="System">
+                    <param id="0" name="Interval (seconds)">2.0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="822509373810159" type="System">
+                    <param id="0" name="Object to create">Meteor</param>
+                    <param id="1" name="Layer">&quot;content&quot;</param>
+                    <param id="2" name="X">random(0,WindowWidth)</param>
+                    <param id="3" name="Y">ViewportTop(&quot;content&quot;)-50</param>
+                </action>
+                <action id="9" name="Set scale" sid="915061128839876" type="Meteor">
+                    <param id="0" name="Scale">random(0.5,1.4)</param>
+                </action>
+                <action id="-8" name="Set angle" sid="292252908389576" type="Meteor">
+                    <param id="0" name="Angle">random(60,120)</param>
+                </action>
+                <action id="6" name="Set speed" sid="282975287531961" type="Meteor">
+                    <param id="0" name="Speed">random(10,30)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="320140270927750">
+            <conditions>
+                <condition id="-11" name="For Each" sid="830926717899086" type="System">
+                    <param id="0" name="Object">Meteor</param>
+                </condition>
+                <condition id="-8" name="Compare two values" sid="862458115148083" type="System">
+                    <param id="0" name="First value">Meteor.Y</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Second value">Spaceship.Y + WindowHeight</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="316186940249943" type="Meteor" />
+            </actions>
+        </event-block>
+        <event-block sid="144439932034452">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="820013035881196" type="System">
+                    <param id="0" name="Interval (seconds)">0.5</param>
+                </condition>
+                <condition id="-16" name="Pick random instance" sid="703778470809382" type="System">
+                    <param id="0" name="Object">enemy</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="724603175356861" type="System">
+                    <param id="0" name="Object to create">LaserEnemy</param>
+                    <param id="1" name="Layer">&quot;content&quot;</param>
+                    <param id="2" name="X">enemy.X</param>
+                    <param id="3" name="Y">enemy.Y</param>
+                </action>
+                <action id="-8" name="Set angle" sid="866928203765510" type="LaserEnemy">
+                    <param id="0" name="Angle">90</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Collision lasers</comment>
+        <event-block sid="420167590387057">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="676377777811072" type="Laser">
+                    <param id="0" name="Object">enemy</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="826372528905849" type="System">
+                    <param id="0" name="Variable">Score</param>
+                    <param id="1" name="Value">10</param>
+                </action>
+                <action id="0" name="Set text" sid="106148989453923" type="ScoreBoard">
+                    <param id="0" name="Text">&quot;Score: &quot; &amp; Score</param>
+                </action>
+                <action id="-9" name="Destroy" sid="376458941811575" type="enemy" />
+                <action id="-3" name="Create object" sid="639174296493080" type="System">
+                    <param id="0" name="Object to create">ExplosionParticles</param>
+                    <param id="1" name="Layer">&quot;explosion&quot;</param>
+                    <param id="2" name="X">enemy.X</param>
+                    <param id="3" name="Y">enemy.Y</param>
+                </action>
+                <action id="-9" name="Destroy" sid="888661670025945" type="Laser" />
+            </actions>
+        </event-block>
+        <event-block sid="390367693675712">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="824893312713692" type="System">
+                    <param id="0" name="Variable">Shots</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="148863366457304" type="BigBoss" />
+                <action id="-3" name="Create object" sid="583354216394917" type="System">
+                    <param id="0" name="Object to create">ExplosionParticles</param>
+                    <param id="1" name="Layer">&quot;content&quot;</param>
+                    <param id="2" name="X">BigBoss.X</param>
+                    <param id="3" name="Y">BigBoss.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="632994971332201">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="260957237752670" type="Laser">
+                    <param id="0" name="Object">Meteor</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="702971772786083" type="System">
+                    <param id="0" name="Variable">Score</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Set text" sid="305686740792707" type="ScoreBoard">
+                    <param id="0" name="Text">&quot;Score: &quot; &amp; Score</param>
+                </action>
+                <action id="-9" name="Destroy" sid="127298069196965" type="Meteor" />
+                <action id="-3" name="Create object" sid="515051286450701" type="System">
+                    <param id="0" name="Object to create">MeteorParticles</param>
+                    <param id="1" name="Layer">&quot;explosion&quot;</param>
+                    <param id="2" name="X">Meteor.X</param>
+                    <param id="3" name="Y">Meteor.Y</param>
+                </action>
+                <action id="-9" name="Destroy" sid="689249424759694" type="Laser" />
+            </actions>
+        </event-block>
+        <comment>Collisions spaceship</comment>
+        <event-block sid="544005220313761">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="901006697091731" type="Spaceship">
+                    <param id="0" name="Object">enemy</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="33" name="Stop all" sid="660060878084288" type="Audio" />
+                <action id="-11" name="Subtract from" sid="172240029846055" type="System">
+                    <param id="0" name="Variable">Health</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action behavior="ScrollTo" id="1" name="Set enabled" sid="246368286751914" type="Scroller">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="-9" name="Destroy" sid="424684802653018" type="Spaceship" />
+                <action id="-3" name="Create object" sid="186597630479957" type="System">
+                    <param id="0" name="Object to create">Explosion</param>
+                    <param id="1" name="Layer">&quot;explosion&quot;</param>
+                    <param id="2" name="X">Spaceship.X</param>
+                    <param id="3" name="Y">Spaceship.Y</param>
+                </action>
+                <action id="-9" name="Destroy" sid="567160683220054" type="enemy" />
+                <action id="-3" name="Create object" sid="999199416357323" type="System">
+                    <param id="0" name="Object to create">Explosion</param>
+                    <param id="1" name="Layer">&quot;explosion&quot;</param>
+                    <param id="2" name="X">enemy.X</param>
+                    <param id="3" name="Y">enemy.Y</param>
+                </action>
+                <action id="0" name="Play" sid="283634454525749" type="Audio">
+                    <param id="0" name="Audio file">sfx_lose</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="613621779937217">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="203608422397298" type="System">
+                            <param id="0" name="First value">Health</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Second value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="598925665631886" type="System">
+                            <param id="0" name="Seconds">1.0</param>
+                        </action>
+                        <action id="-26" name="Restart layout" sid="816034524756971" type="System" />
+                    </actions>
+                </event-block>
+                <event-block sid="574160788481320">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="188828237143549" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="198410219667630" type="System">
+                            <param id="0" name="Seconds">2.0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="127101540649134" type="System">
+                            <param id="0" name="Variable">Health</param>
+                            <param id="1" name="Value">3</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="632875518221036" type="System">
+                            <param id="0" name="Variable">Score</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-26" name="Restart layout" sid="518409614590179" type="System" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="780297169784024">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="587661126496992" type="Spaceship">
+                    <param id="0" name="Object">Meteor</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="33" name="Stop all" sid="306148057905336" type="Audio" />
+                <action id="-11" name="Subtract from" sid="492693002003636" type="System">
+                    <param id="0" name="Variable">Health</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action behavior="ScrollTo" id="1" name="Set enabled" sid="953165827203295" type="Scroller">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="-9" name="Destroy" sid="765570016263321" type="Spaceship" />
+                <action id="-3" name="Create object" sid="165763388437878" type="System">
+                    <param id="0" name="Object to create">Explosion</param>
+                    <param id="1" name="Layer">&quot;explosion&quot;</param>
+                    <param id="2" name="X">Spaceship.X</param>
+                    <param id="3" name="Y">Spaceship.Y</param>
+                </action>
+                <action id="-3" name="Create object" sid="853030806808069" type="System">
+                    <param id="0" name="Object to create">MeteorParticles</param>
+                    <param id="1" name="Layer">&quot;explosion&quot;</param>
+                    <param id="2" name="X">Meteor.X</param>
+                    <param id="3" name="Y">Meteor.Y</param>
+                </action>
+                <action id="0" name="Play" sid="872927993033556" type="Audio">
+                    <param id="0" name="Audio file">sfx_lose</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="299151173531487">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="479056815908039" type="System">
+                            <param id="0" name="Variable">Health</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="182162765586171" type="System">
+                            <param id="0" name="Seconds">1.0</param>
+                        </action>
+                        <action id="-26" name="Restart layout" sid="710519751970309" type="System" />
+                    </actions>
+                </event-block>
+                <event-block sid="864288602146769">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="148062355738061" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="794748155662481" type="System">
+                            <param id="0" name="Seconds">2.0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="341505822469645" type="System">
+                            <param id="0" name="Variable">Health</param>
+                            <param id="1" name="Value">3</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="866720132150477" type="System">
+                            <param id="0" name="Variable">Score</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-26" name="Restart layout" sid="553152165131179" type="System" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="405685422040165">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="992387919826155" type="Spaceship">
+                    <param id="0" name="Object">LaserEnemy</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="702510112216974" type="Spaceship">
+                    <param id="0" name="Instance variable">isVulnerable</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="33" name="Stop all" sid="194283085078461" type="Audio" />
+                <action id="-11" name="Subtract from" sid="892421261938499" type="System">
+                    <param id="0" name="Variable">Health</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action behavior="ScrollTo" id="1" name="Set enabled" sid="321220024814972" type="Scroller">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="-9" name="Destroy" sid="499072125839609" type="Spaceship" />
+                <action id="-3" name="Create object" sid="326817618741615" type="System">
+                    <param id="0" name="Object to create">Explosion</param>
+                    <param id="1" name="Layer">&quot;explosion&quot;</param>
+                    <param id="2" name="X">Spaceship.X</param>
+                    <param id="3" name="Y">Spaceship.Y</param>
+                </action>
+                <action id="-3" name="Create object" sid="654814563593689" type="System">
+                    <param id="0" name="Object to create">MeteorParticles</param>
+                    <param id="1" name="Layer">&quot;explosion&quot;</param>
+                    <param id="2" name="X">Meteor.X</param>
+                    <param id="3" name="Y">Meteor.Y</param>
+                </action>
+                <action id="0" name="Play" sid="920711019757522" type="Audio">
+                    <param id="0" name="Audio file">sfx_lose</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="179631796196370">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="647533963635963" type="System">
+                            <param id="0" name="First value">Health</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Second value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="230236379573830" type="System">
+                            <param id="0" name="Seconds">1.0</param>
+                        </action>
+                        <action id="-26" name="Restart layout" sid="588943798125185" type="System" />
+                    </actions>
+                </event-block>
+                <event-block sid="599454066262107">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="782523990904554" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="577523987805863" type="System">
+                            <param id="0" name="Seconds">2.0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="972720027677015" type="System">
+                            <param id="0" name="Variable">Health</param>
+                            <param id="1" name="Value">3</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="210645453979321" type="System">
+                            <param id="0" name="Variable">Score</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-26" name="Restart layout" sid="824815501865187" type="System" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block disabled="1" sid="841715904101765">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="922877594211911" type="Spaceship">
+                    <param id="0" name="Object">Dock</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="155718324605189" type="Meteor" />
+                <action id="-10" name="Set value" sid="180630028033505" type="Spaceship">
+                    <param id="0" name="Instance variable">isVulnerable</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="927208070308489" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action id="-9" name="Set value" sid="502444704945338" type="System">
+                    <param id="0" name="Variable">Health</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+                <action id="-9" name="Set value" sid="924513295953068" type="System">
+                    <param id="0" name="Variable">Score</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-26" name="Restart layout" sid="577752150923031" type="System" />
+            </actions>
+        </event-block>
+        <event-block sid="614467194024765">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="993479561276254" type="Scroller">
+                    <param id="0" name="Object">Dock</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="ScrollTo" id="1" name="Set enabled" sid="513083988372194" type="Scroller">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="-9" name="Destroy" sid="778604580360859" type="Scroller" />
+            </actions>
+        </event-block>
+        <event-block sid="671625612049270">
+            <conditions>
+                <condition id="-31" inverted="1" name="Object UID exists" sid="846371054365754" type="System">
+                    <param id="0" name="UID">36</param>
+                </condition>
+                <condition id="-6" name="Every X seconds" sid="347383782108001" type="System">
+                    <param id="0" name="Interval (seconds)">1.0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="944320116326440" type="System">
+                    <param id="0" name="Object to create">BigBossLaser</param>
+                    <param id="1" name="Layer">&quot;content&quot;</param>
+                    <param id="2" name="X">BigBoss.X</param>
+                    <param id="3" name="Y">BigBoss.Y</param>
+                </action>
+                <action id="-8" name="Set angle" sid="759136939183985" type="BigBossLaser">
+                    <param id="0" name="Angle">90</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="775053161338471">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="783991355657941" type="Spaceship">
+                    <param id="0" name="Object">BigBossLaser</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="33" name="Stop all" sid="158491757280298" type="Audio" />
+                <action id="-11" name="Subtract from" sid="395425114117677" type="System">
+                    <param id="0" name="Variable">Health</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action behavior="ScrollTo" id="1" name="Set enabled" sid="726343709269033" type="Scroller">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="-9" name="Destroy" sid="199958574187515" type="Spaceship" />
+                <action id="-3" name="Create object" sid="181687866176646" type="System">
+                    <param id="0" name="Object to create">Explosion</param>
+                    <param id="1" name="Layer">&quot;explosion&quot;</param>
+                    <param id="2" name="X">Spaceship.X</param>
+                    <param id="3" name="Y">Spaceship.Y</param>
+                </action>
+                <action id="0" name="Play" sid="184738577288298" type="Audio">
+                    <param id="0" name="Audio file">sfx_lose</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="739496925131374">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="279617705648353" type="Laser">
+                    <param id="0" name="Object">BigBoss</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="600447120806410" type="System">
+                    <param id="0" name="Variable">Score</param>
+                    <param id="1" name="Value">10</param>
+                </action>
+                <action id="-10" name="Add to" sid="614034157059240" type="System">
+                    <param id="0" name="Variable">Shots</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Set text" sid="680902451265458" type="ScoreBoard">
+                    <param id="0" name="Text">&quot;Score: &quot; &amp; Score</param>
+                </action>
+                <action id="-3" name="Create object" sid="236046056705445" type="System">
+                    <param id="0" name="Object to create">ExplosionParticles</param>
+                    <param id="1" name="Layer">&quot;explosion&quot;</param>
+                    <param id="2" name="X">enemy.X</param>
+                    <param id="3" name="Y">enemy.Y</param>
+                </action>
+                <action id="-9" name="Destroy" sid="542541286341070" type="Laser" />
+            </actions>
+            <sub-events>
+                <event-block sid="969318998054428">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="260489277933091" type="System">
+                            <param id="0" name="Variable">Shots</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">100</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="922875599762514" type="BigBoss" />
+                        <action id="-3" name="Create object" sid="934146842303384" type="System">
+                            <param id="0" name="Object to create">ExplosionParticles</param>
+                            <param id="1" name="Layer">&quot;explosion&quot;</param>
+                            <param id="2" name="X">BigBoss.X</param>
+                            <param id="3" name="Y">BigBoss.Y</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block disabled="1" sid="202761872330459">
+            <conditions>
+                <condition id="-9" name="Is visible" sid="575251074755900" type="BigBoss" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block disabled="1" sid="524092970038572">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="431519518952401" type="Laser">
+                            <param id="0" name="Object">BigBoss</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="247536290236442" type="System">
+                            <param id="0" name="Variable">Score</param>
+                            <param id="1" name="Value">10</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="717539692149234" type="System">
+                            <param id="0" name="Variable">Shots</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="935205619368021" type="ScoreBoard">
+                            <param id="0" name="Text">&quot;Score: &quot; &amp; Score</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="354759124037644" type="System">
+                            <param id="0" name="Object to create">ExplosionParticles</param>
+                            <param id="1" name="Layer">&quot;explosion&quot;</param>
+                            <param id="2" name="X">enemy.X</param>
+                            <param id="3" name="Y">enemy.Y</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="966377283315926" type="Laser" />
+                    </actions>
+                </event-block>
+                <event-block disabled="1" sid="763522719390421">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="147104790332277" type="System">
+                            <param id="0" name="Variable">Health</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">10</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>
