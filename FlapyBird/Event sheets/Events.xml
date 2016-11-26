@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Events</name>
+    <events>
+        <event-block sid="538839885039875">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="268495746569324" type="Keyboard">
+                    <param id="0" name="Key">32 (Space)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="9" name="Set vector Y" sid="420534374356834" type="Bird">
+                    <param id="0" name="Vector Y">-650</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="739861255862224">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="359454546956279" type="System">
+                    <param id="0" name="First value">Bird.Platform.VectorY</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Second value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-20" name="Rotate toward angle" sid="705218615930492" type="Bird">
+                    <param id="0" name="Degrees">10</param>
+                    <param id="1" name="Angle">-45</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="203215742431069">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="209836271854889" type="System">
+                    <param id="0" name="First value">Bird.Platform.VectorY</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Second value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-20" name="Rotate toward angle" sid="740347225257898" type="Bird">
+                    <param id="0" name="Degrees">10</param>
+                    <param id="1" name="Angle">45</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
