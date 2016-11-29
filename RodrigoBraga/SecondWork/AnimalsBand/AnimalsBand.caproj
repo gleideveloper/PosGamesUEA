@@ -1,0 +1,373 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>AnimalsBand</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>8ipsyo3a1cuc</unique-id>
+    <saved-with-version>23900</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="progressbar" version="1">Progress bar</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+        <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>900</width>
+        <height>640</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="Sprite" sid="228606708116658">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="725473017786670" speed="5">
+                    <frame duration="1" hotspotX="1.67114" hotspotY="4.9" original-source="E:\games\PosGamesUEA\RodrigoBraga\SecondWork\AnimalsBand\Assets\player\assets animals band.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Background" sid="206486484460749">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Sine" sid="908986975779302">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <texture />
+        </object-type>
+        <object-type name="ground" sid="969673410602085">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="840695516595118">
+                    <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="Solid" sid="743431805522580">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="159257688000311" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Foca" sid="646827717242888">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="627610461764212">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="Solid" sid="756232400670462">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="3" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="756071255332404" speed="10">
+                    <frame duration="1" hotspotX="0.512195" hotspotY="0.48" original-source="E:\games\AnimalsBand\assets\player\foca.jpg" />
+                    <frame duration="1" hotspotX="0.538462" hotspotY="0.489796" />
+                    <frame duration="1" hotspotX="0.526316" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Keyboard" sid="218625054384087">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="TubeTop" sid="308468706748544">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="passed" sid="280057657483542" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Solid" sid="439061155459616">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Bullet" sid="434741873284041">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="DestroyOutsideLayout" sid="111288607013350">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="336124725460668" speed="5">
+                    <frame duration="1" hotspotX="0.481481" hotspotY="1" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TubeBottom" sid="514979712306004">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="372181895553537">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Bullet" sid="627257151891388">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="DestroyOutsideLayout" sid="933927273745485">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="838836011974675" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.00353982">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.981481" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Hud" sid="890906764984607">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="GameOver" sid="571204776715279">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="575152439395586" speed="5">
+                    <frame duration="1" hotspotX="0.657895" hotspotY="3.05" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="nota01" sid="638878300393760">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="730405081890143">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="DestroyOutsideLayout" sid="909901505620055">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="4" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="924543739197840" speed="10">
+                    <frame duration="1" hotspotX="0.521739" hotspotY="0.521739">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.521739" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.521739" hotspotY="0.521739" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="nota02" sid="431652612119333">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="597545383385241">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="DestroyOutsideLayout" sid="653246533788315">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="505688845175917" speed="5">
+                    <frame duration="1" hotspotX="0.466667" hotspotY="0.565217">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="nota03" sid="226226281341316">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="622064867888810">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="DestroyOutsideLayout" sid="233321092726400">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="213016469958999" speed="5">
+                    <frame duration="1" hotspotX="0.478261" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="nota04" sid="530733992224154">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="267274048146778">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="DestroyOutsideLayout" sid="136458030380824">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="467076372785119" speed="5">
+                    <frame duration="1" hotspotX="0.48" hotspotY="0.553191">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cat" sid="154134808125062">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="8" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="556036831553843" speed="5">
+                    <frame duration="1" hotspotX="0.708772" hotspotY="0.513447" original-source="E:\games\AnimalsBand\assets\cat\Fall (1).png">
+                        <collision-poly>
+                            <point x="0.126316" y="0.190709" />
+                            <point x="0.708772" y="0.127139" />
+                            <point x="0.947368" y="0.430318" />
+                            <point x="0.97193" y="0.513447" />
+                            <point x="0.947368" y="0.596577" />
+                            <point x="0.708772" y="0.892421" />
+                            <point x="0.242105" y="0.755501" />
+                            <point x="0.0807017" y="0.513447" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.696864" hotspotY="0.493151" original-source="E:\games\AnimalsBand\assets\cat\Fall (2).png" />
+                    <frame duration="1" hotspotX="0.6633" hotspotY="0.509217" original-source="E:\games\AnimalsBand\assets\cat\Fall (3).png" />
+                    <frame duration="1" hotspotX="0.699301" hotspotY="0.505855" original-source="E:\games\AnimalsBand\assets\cat\Fall (4).png" />
+                    <frame duration="1" hotspotX="0.708772" hotspotY="0.50358" original-source="E:\games\AnimalsBand\assets\cat\Fall (5).png" />
+                    <frame duration="1" hotspotX="0.696864" hotspotY="0.505855" original-source="E:\games\AnimalsBand\assets\cat\Fall (6).png" />
+                    <frame duration="1" hotspotX="0.665541" hotspotY="0.509217" original-source="E:\games\AnimalsBand\assets\cat\Fall (7).png" />
+                    <frame duration="1" hotspotX="0.699301" hotspotY="0.505855" original-source="E:\games\AnimalsBand\assets\cat\Fall (8).png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="dog" sid="327476585376259">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="10" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="923241420477127" speed="5">
+                    <frame duration="1" hotspotX="0.602374" hotspotY="0.410995" original-source="E:\games\AnimalsBand\assets\dog\Hurt (1).png">
+                        <collision-poly>
+                            <point x="0.0860534" y="0.0418848" />
+                            <point x="0.599407" y="0.0340314" />
+                            <point x="0.875371" y="0.253927" />
+                            <point x="0.952522" y="0.408377" />
+                            <point x="0.830861" y="0.526178" />
+                            <point x="0.599407" y="0.981675" />
+                            <point x="0.350148" y="0.544503" />
+                            <point x="0.106825" y="0.408377" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.453988" hotspotY="0.453883" original-source="E:\games\AnimalsBand\assets\dog\Hurt (2).png" />
+                    <frame duration="1" hotspotX="0.386167" hotspotY="0.484091" original-source="E:\games\AnimalsBand\assets\dog\Hurt (3).png" />
+                    <frame duration="1" hotspotX="0.349333" hotspotY="0.461905" original-source="E:\games\AnimalsBand\assets\dog\Hurt (4).png" />
+                    <frame duration="1" hotspotX="0.354749" hotspotY="0.36236" original-source="E:\games\AnimalsBand\assets\dog\Hurt (5).png" />
+                    <frame duration="1" hotspotX="0.341808" hotspotY="0.338192" original-source="E:\games\AnimalsBand\assets\dog\Hurt (6).png" />
+                    <frame duration="1" hotspotX="0.315642" hotspotY="0.297297" original-source="E:\games\AnimalsBand\assets\dog\Hurt (7).png" />
+                    <frame duration="1" hotspotX="0.346939" hotspotY="0.4047" original-source="E:\games\AnimalsBand\assets\dog\Hurt (8).png" />
+                    <frame duration="1" hotspotX="0.500914" hotspotY="0.50104" original-source="E:\games\AnimalsBand\assets\dog\Hurt (9).png" />
+                    <frame duration="1" hotspotX="0.500914" hotspotY="0.50104" original-source="E:\games\AnimalsBand\assets\dog\Hurt (10).png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Audio" sid="358184628564798">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="ProgressBar" sid="371311310554813">
+            <plugin id="progressbar" />
+            <instance-variables>
+                <instance-variable name="value" sid="304498368263434" type="number" />
+            </instance-variables>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Main.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Events.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="4" />
+        <global-instance type="Audio" uid="15">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
+    </global-instances>
+    <sounds-folder>
+        <file name="Foca da Meia-Noite - Sweet Child O´ Mine.ogg" />
+    </sounds-folder>
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

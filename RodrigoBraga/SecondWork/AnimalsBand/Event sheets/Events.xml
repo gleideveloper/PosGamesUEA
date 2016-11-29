@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Events</name>
+    <events>
+        <variable comment="Check if bird dead" constant="0" name="isDead" sid="434797337980951" static="0" type="number">0</variable>
+        <variable constant="1" name="GAPSIZE" sid="967862851883798" static="0" type="number">170</variable>
+        <variable constant="0" name="Score" sid="946808143519531" static="0" type="number">0</variable>
+        <event-group description="" sid="263293811479270" title="Bird">
+            <sub-events>
+                <event-block sid="166264576866223">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="240186989993563" type="Keyboard">
+                            <param id="0" name="Key">32 (Space)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="9" name="Set vector Y" sid="606639571630325" type="Foca">
+                            <param id="0" name="Vector Y">-450</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block disabled="1" sid="617795859668656">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="261152099774553" type="System">
+                            <param id="0" name="First value">Foca.Platform.VectorY</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Second value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-20" name="Rotate toward angle" sid="545088330126234" type="Foca">
+                            <param id="0" name="Degrees">10</param>
+                            <param id="1" name="Angle">-45</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block disabled="1" sid="745630097114731">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="956827254754608" type="System">
+                            <param id="0" name="First value">Foca.Platform.VectorY</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Second value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-20" name="Rotate toward angle" sid="485903069100291" type="Foca">
+                            <param id="0" name="Degrees">10</param>
+                            <param id="1" name="Angle">45</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="188944076625597" title="Colision">
+            <sub-events>
+                <event-block any="1" sid="830532059040413">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="282477371852215" type="Foca">
+                            <param id="0" name="Object">ground</param>
+                        </condition>
+                        <condition id="0" name="On collision with another object" sid="247473556650825" type="Foca">
+                            <param id="0" name="Object">TubeTop</param>
+                        </condition>
+                        <condition id="0" name="On collision with another object" sid="428211259843131" type="Foca">
+                            <param id="0" name="Object">TubeBottom</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="862477065707152" type="System">
+                            <param id="0" name="Variable">isDead</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="343301726253699">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="222657162208706" type="System">
+                    <param id="0" name="Interval (seconds)">int(random(4,8))</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="522510304731722" type="System">
+                    <param id="0" name="Object to create">nota01</param>
+                    <param id="1" name="Layer">&quot;Background&quot;</param>
+                    <param id="2" name="X">970</param>
+                    <param id="3" name="Y">int(random(116,136))</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="117700540535502">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="640875619001690" type="System">
+                    <param id="0" name="Interval (seconds)">int(random(5,9))</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="187500570896347" type="System">
+                    <param id="0" name="Object to create">nota02</param>
+                    <param id="1" name="Layer">&quot;Background&quot;</param>
+                    <param id="2" name="X">970</param>
+                    <param id="3" name="Y">int(random(235,255))</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="360159608908209">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="494879141131908" type="System">
+                    <param id="0" name="Interval (seconds)">int(random(6,10))</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="562652911700509" type="System">
+                    <param id="0" name="Object to create">nota03</param>
+                    <param id="1" name="Layer">&quot;Background&quot;</param>
+                    <param id="2" name="X">970</param>
+                    <param id="3" name="Y">int(random(333,353))</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="319193760391448">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="334698192775947" type="System">
+                    <param id="0" name="Interval (seconds)">int(random(7,11))</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="885184370112935" type="System">
+                    <param id="0" name="Object to create">nota04</param>
+                    <param id="1" name="Layer">&quot;Background&quot;</param>
+                    <param id="2" name="X">970</param>
+                    <param id="3" name="Y">int(random(455,475))</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="531162933465761" title="Game Over">
+            <sub-events>
+                <event-block sid="881008726852610">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="833924976723115" type="System">
+                            <param id="0" name="Variable">isDead</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="538695006394712" type="GameOver">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action behavior="Sine" id="0" name="Set active" sid="613752072901952" type="ground">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action behavior="Sine" id="0" name="Set active" sid="807547952834111" type="Background">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action behavior="Bullet" id="5" name="Set enabled" sid="429090593723137" type="TubeBottom">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action behavior="Bullet" id="5" name="Set enabled" sid="736615265635514" type="TubeTop">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action behavior="Platform" id="11" name="Set enabled" sid="740792272531549" type="Foca">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="652495301835497" type="System">
+                            <param id="0" name="Seconds">2.0</param>
+                        </action>
+                        <action id="-21" name="Reset global variables" sid="551204549438813" type="System" />
+                        <action id="-15" name="Set visible" sid="668496776502851" type="GameOver">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="33" name="Stop all" sid="662026922147171" type="Audio" />
+                        <action id="-26" name="Restart layout" sid="127138748331783" type="System" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="623676177487047" title="Score">
+            <sub-events>
+                <event-block any="1" sid="494163981525895">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="145625347395047" type="Foca">
+                            <param id="0" name="Object">nota01</param>
+                        </condition>
+                        <condition id="0" name="On collision with another object" sid="410408333955827" type="Foca">
+                            <param id="0" name="Object">nota02</param>
+                        </condition>
+                        <condition id="0" name="On collision with another object" sid="972825082589746" type="Foca">
+                            <param id="0" name="Object">nota03</param>
+                        </condition>
+                        <condition id="0" name="On collision with another object" sid="924046494745512" type="Foca">
+                            <param id="0" name="Object">nota04</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="123461971191408" type="System">
+                            <param id="0" name="Variable">Score</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="563254556363582" type="Hud">
+                            <param id="0" name="Text">Score</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block disabled="1" sid="797065023980029">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="823367217939083" type="TubeTop">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="X co-ordinate">Foca.X</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="311984047942728" type="TubeTop">
+                            <param id="0" name="Instance variable">passed</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="631073295706935" type="TubeTop">
+                            <param id="0" name="Instance variable">passed</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="780670605277111" type="System">
+                            <param id="0" name="Variable">Score</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="758740009721520" type="Hud">
+                            <param id="0" name="Text">Score</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="277144288073500">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="748846144042133" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="392325918692337" type="Audio">
+                    <param id="0" name="Audio file">Foca da Meia-Noite - Sweet Child O´ Mine</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="224797784467244">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="307567311357202" type="System">
+                    <param id="0" name="Interval (seconds)">1.0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="2" name="Set CSS style" sid="947737319519024" type="ProgressBar">
+                    <param id="0" name="Property name">&quot;color&quot;</param>
+                    <param id="1" name="Value">&quot;green&quot;</param>
+                </action>
+                <action id="-11" name="Add to" sid="602955558462841" type="ProgressBar">
+                    <param id="0" name="Instance variable">value</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="3" name="Set progress" sid="385333833883743" type="ProgressBar">
+                    <param id="0" name="Value">ProgressBar.value</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="894990579783557">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="129467885746340" type="nota01">
+                    <param id="0" name="Object">Foca</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="890879603897746" type="nota01" />
+            </actions>
+        </event-block>
+        <event-block sid="105439915835611">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="717510122468493" type="nota02">
+                    <param id="0" name="Object">Foca</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="630861892236536" type="nota02" />
+            </actions>
+        </event-block>
+        <event-block sid="122840916373619">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="577011917239346" type="nota03">
+                    <param id="0" name="Object">Foca</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="457713765970512" type="nota03" />
+            </actions>
+        </event-block>
+        <event-block sid="784880597610914">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="907401179310496" type="nota04">
+                    <param id="0" name="Object">Foca</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="377969307551502" type="nota04" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
