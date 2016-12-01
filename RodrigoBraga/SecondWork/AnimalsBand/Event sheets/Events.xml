@@ -54,16 +54,10 @@
         </event-group>
         <event-group description="" sid="188944076625597" title="Colision">
             <sub-events>
-                <event-block any="1" sid="830532059040413">
+                <event-block any="1" disabled="1" sid="830532059040413">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="282477371852215" type="Foca">
                             <param id="0" name="Object">ground</param>
-                        </condition>
-                        <condition id="0" name="On collision with another object" sid="247473556650825" type="Foca">
-                            <param id="0" name="Object">TubeTop</param>
-                        </condition>
-                        <condition id="0" name="On collision with another object" sid="428211259843131" type="Foca">
-                            <param id="0" name="Object">TubeBottom</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -86,7 +80,7 @@
                     <param id="0" name="Object to create">nota01</param>
                     <param id="1" name="Layer">&quot;Background&quot;</param>
                     <param id="2" name="X">970</param>
-                    <param id="3" name="Y">int(random(116,136))</param>
+                    <param id="3" name="Y">int(random(100,120))</param>
                 </action>
             </actions>
         </event-block>
@@ -101,7 +95,7 @@
                     <param id="0" name="Object to create">nota02</param>
                     <param id="1" name="Layer">&quot;Background&quot;</param>
                     <param id="2" name="X">970</param>
-                    <param id="3" name="Y">int(random(235,255))</param>
+                    <param id="3" name="Y">int(random(150,160))</param>
                 </action>
             </actions>
         </event-block>
@@ -116,7 +110,7 @@
                     <param id="0" name="Object to create">nota03</param>
                     <param id="1" name="Layer">&quot;Background&quot;</param>
                     <param id="2" name="X">970</param>
-                    <param id="3" name="Y">int(random(333,353))</param>
+                    <param id="3" name="Y">int(random(190,200))</param>
                 </action>
             </actions>
         </event-block>
@@ -131,7 +125,37 @@
                     <param id="0" name="Object to create">nota04</param>
                     <param id="1" name="Layer">&quot;Background&quot;</param>
                     <param id="2" name="X">970</param>
-                    <param id="3" name="Y">int(random(455,475))</param>
+                    <param id="3" name="Y">int(random(230,240))</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="122827134380768">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="973986718846440" type="System">
+                    <param id="0" name="Interval (seconds)">int(random(7,11))</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="683510030373402" type="System">
+                    <param id="0" name="Object to create">nota05</param>
+                    <param id="1" name="Layer">&quot;Background&quot;</param>
+                    <param id="2" name="X">970</param>
+                    <param id="3" name="Y">int(random(270,280))</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="521690042327807">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="295598058530001" type="System">
+                    <param id="0" name="Interval (seconds)">int(random(2,6))</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="557280775791950" type="System">
+                    <param id="0" name="Object to create">nota06</param>
+                    <param id="1" name="Layer">&quot;Background&quot;</param>
+                    <param id="2" name="X">970</param>
+                    <param id="3" name="Y">380</param>
                 </action>
             </actions>
         </event-block>
@@ -149,16 +173,7 @@
                         <action id="-15" name="Set visible" sid="538695006394712" type="GameOver">
                             <param id="0" name="Visibility">1</param>
                         </action>
-                        <action behavior="Sine" id="0" name="Set active" sid="613752072901952" type="ground">
-                            <param id="0" name="State">0</param>
-                        </action>
-                        <action behavior="Sine" id="0" name="Set active" sid="807547952834111" type="Background">
-                            <param id="0" name="State">0</param>
-                        </action>
-                        <action behavior="Bullet" id="5" name="Set enabled" sid="429090593723137" type="TubeBottom">
-                            <param id="0" name="State">0</param>
-                        </action>
-                        <action behavior="Bullet" id="5" name="Set enabled" sid="736615265635514" type="TubeTop">
+                        <action behavior="Sine" id="0" name="Set active" sid="807547952834111" type="NotasMusicais">
                             <param id="0" name="State">0</param>
                         </action>
                         <action behavior="Platform" id="11" name="Set enabled" sid="740792272531549" type="Foca">
@@ -193,6 +208,12 @@
                         <condition id="0" name="On collision with another object" sid="924046494745512" type="Foca">
                             <param id="0" name="Object">nota04</param>
                         </condition>
+                        <condition id="0" name="On collision with another object" sid="934297184307282" type="Foca">
+                            <param id="0" name="Object">nota05</param>
+                        </condition>
+                        <condition id="0" name="On collision with another object" sid="132376110926191" type="Foca">
+                            <param id="0" name="Object">nota06</param>
+                        </condition>
                     </conditions>
                     <actions>
                         <action id="-10" name="Add to" sid="123461971191408" type="System">
@@ -200,32 +221,6 @@
                             <param id="1" name="Value">1</param>
                         </action>
                         <action id="0" name="Set text" sid="563254556363582" type="Hud">
-                            <param id="0" name="Text">Score</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block disabled="1" sid="797065023980029">
-                    <conditions>
-                        <condition id="-1" name="Compare X" sid="823367217939083" type="TubeTop">
-                            <param id="0" name="Comparison">2</param>
-                            <param id="1" name="X co-ordinate">Foca.X</param>
-                        </condition>
-                        <condition id="-7" name="Compare instance variable" sid="311984047942728" type="TubeTop">
-                            <param id="0" name="Instance variable">passed</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">0</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-10" name="Set value" sid="631073295706935" type="TubeTop">
-                            <param id="0" name="Instance variable">passed</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                        <action id="-10" name="Add to" sid="780670605277111" type="System">
-                            <param id="0" name="Variable">Score</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                        <action id="0" name="Set text" sid="758740009721520" type="Hud">
                             <param id="0" name="Text">Score</param>
                         </action>
                     </actions>
@@ -303,6 +298,26 @@
             </conditions>
             <actions>
                 <action id="-9" name="Destroy" sid="377969307551502" type="nota04" />
+            </actions>
+        </event-block>
+        <event-block sid="999754733275253">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="373315937830881" type="nota05">
+                    <param id="0" name="Object">Foca</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="545958518298828" type="nota05" />
+            </actions>
+        </event-block>
+        <event-block sid="393470835868890">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="996073365539635" type="nota06">
+                    <param id="0" name="Object">Foca</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="987037302961379" type="nota06" />
             </actions>
         </event-block>
     </events>
