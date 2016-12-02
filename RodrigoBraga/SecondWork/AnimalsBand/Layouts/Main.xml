@@ -106,17 +106,19 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TiledBackground" uid="5">
+                <instance type="Plateia" uid="6">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
-                        <hotspot>Top-left</hotspot>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>1</initial-frame>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <behavior-instances>
                         <behavior-instance type="Sine">
                             <properties>
                                 <active-on-start>Yes</active-on-start>
                                 <movement>Horizontal</movement>
-                                <wave>Triangle</wave>
+                                <wave>Sine</wave>
                                 <period>2</period>
                                 <period-random>0</period-random>
                                 <period-offset>0</period-offset>
@@ -134,14 +136,14 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-69.264831543</x>
-                        <y>388.746948242</y>
+                        <x>321.357299805</x>
+                        <y>399.872039795</y>
                         <z>0</z>
-                        <width>753</width>
-                        <height>91</height>
+                        <width>694.622375488</width>
+                        <height>98</height>
                         <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

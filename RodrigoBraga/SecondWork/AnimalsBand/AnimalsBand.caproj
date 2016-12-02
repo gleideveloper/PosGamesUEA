@@ -251,32 +251,20 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite2" sid="579524539629048">
+        <object-type name="Plateia" sid="579524539629048">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="400840296228260">
+                    <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="Solid" sid="983039751767341">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
-                <animation framecount="13" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="184230507283315" speed="5">
-                    <frame duration="3" hotspotX="0.5" hotspotY="0.621212" original-source="C:\Users\Gleides\Pictures\Assets_Breakout\breakout-blocks.png">
-                        <collision-poly>
-                            <point x="0" y="0" />
-                            <point x="1" y="0" />
-                            <point x="1" y="0.5" />
-                            <point x="0.875" y="0.666667" />
-                            <point x="0.5" y="1" />
-                            <point x="0" y="1" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.517241" hotspotY="0.515152" />
-                    <frame duration="1" hotspotX="0.517241" hotspotY="0.515152" />
-                    <frame duration="1" hotspotX="0.517241" hotspotY="0.515152" />
-                    <frame duration="1" hotspotX="0.517241" hotspotY="0.515152" />
-                    <frame duration="1" hotspotX="0.517241" hotspotY="0.515152" />
-                    <frame duration="1" hotspotX="0.517241" hotspotY="0.515152" />
-                    <frame duration="1" hotspotX="0.517241" hotspotY="0.515152" />
-                    <frame duration="1" hotspotX="0.517241" hotspotY="0.515152" />
-                    <frame duration="1" hotspotX="0.517241" hotspotY="0.515152" />
-                    <frame duration="1" hotspotX="0.517241" hotspotY="0.515152" />
-                    <frame duration="1" hotspotX="0.517241" hotspotY="0.515152" />
-                    <frame duration="1" hotspotX="0.517241" hotspotY="0.515152" />
+                <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="184230507283315" speed="3">
+                    <frame duration="2" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
         </object-type>
