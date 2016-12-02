@@ -4,8 +4,8 @@
     <sid>709116179524481</sid>
     <event-sheet>Events</event-sheet>
     <size>
-        <width>1480</width>
-        <height>1280</height>
+        <width>640</width>
+        <height>480</height>
     </size>
     <margins>
         <horizontal>500</horizontal>
@@ -29,42 +29,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="NotasMusicais" uid="1">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <hotspot>Top-left</hotspot>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Sine">
-                            <properties>
-                                <active-on-start>Yes</active-on-start>
-                                <movement>Horizontal</movement>
-                                <wave>Sawtooth</wave>
-                                <period>4</period>
-                                <period-random>0</period-random>
-                                <period-offset>0</period-offset>
-                                <period-offset-random>0</period-offset-random>
-                                <magnitude>-144</magnitude>
-                                <magnitude-random>0</magnitude-random>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>-119</x>
-                        <y>158</y>
-                        <z>0</z>
-                        <width>932</width>
-                        <height>125</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                        <angle>0</angle>
-                        <opacity>0.300000012</opacity>
-                    </world>
-                </instance>
-                <instance type="ground" uid="2">
+                <instance type="Background" uid="2">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -81,11 +46,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-230</x>
-                        <y>418</y>
+                        <x>0</x>
+                        <y>3</y>
                         <z>0</z>
-                        <width>1380</width>
-                        <height>115</height>
+                        <width>640</width>
+                        <height>480</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -93,25 +58,41 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-            </instances>
-            <effects />
-        </layer>
-        <layer name="object" sid="586821503900793">
-            <initially-visible>1</initially-visible>
-            <background-color>255,255,255</background-color>
-            <transparent>1</transparent>
-            <parallax>
-                <x>1</x>
-                <y>1</y>
-            </parallax>
-            <zoom-rate>1</zoom-rate>
-            <opacity>1</opacity>
-            <force-own-texture>0</force-own-texture>
-            <global>0</global>
-            <use-render-cells>0</use-render-cells>
-            <blend-mode>0</blend-mode>
-            <effect-fallback>0</effect-fallback>
-            <instances>
+                <instance type="NotasMusicais" uid="1">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <hotspot>Top-left</hotspot>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Sine">
+                            <properties>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Horizontal</movement>
+                                <wave>Sawtooth</wave>
+                                <period>2</period>
+                                <period-random>0</period-random>
+                                <period-offset>0</period-offset>
+                                <period-offset-random>0</period-offset-random>
+                                <magnitude>-114</magnitude>
+                                <magnitude-random>0</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-200</x>
+                        <y>1</y>
+                        <z>0</z>
+                        <width>1028</width>
+                        <height>325</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0.300000012</opacity>
+                    </world>
+                </instance>
                 <instance type="Foca" uid="3">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -143,18 +124,79 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>56.078071594</x>
-                        <y>312.189056396</y>
+                        <x>68.853622437</x>
+                        <y>214.557891846</y>
                         <z>0</z>
                         <width>37.836975098</width>
                         <height>53.889026642</height>
                         <depth>0</depth>
-                        <hotspotX>0.787878811</hotspotX>
-                        <hotspotY>0.510638297</hotspotY>
+                        <hotspotX>0.484848499</hotspotX>
+                        <hotspotY>0.553191483</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="ground" uid="6">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Sine">
+                            <properties>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Horizontal</movement>
+                                <wave>Sawtooth</wave>
+                                <period>1</period>
+                                <period-random>0</period-random>
+                                <period-offset>0</period-offset>
+                                <period-offset-random>0</period-offset-random>
+                                <magnitude>-114</magnitude>
+                                <magnitude-random>0</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>341</x>
+                        <y>356</y>
+                        <z>0</z>
+                        <width>1221</width>
+                        <height>73</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+            </instances>
+            <effects />
+        </layer>
+        <layer name="object" sid="586821503900793">
+            <initially-visible>1</initially-visible>
+            <background-color>255,255,255</background-color>
+            <transparent>1</transparent>
+            <parallax>
+                <x>1</x>
+                <y>1</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>1</opacity>
+            <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances>
                 <instance type="dog" uid="14">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -255,14 +297,14 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>279</x>
-                        <y>319</y>
+                        <x>323</x>
+                        <y>206</y>
                         <z>0</z>
                         <width>190</width>
                         <height>40</height>
                         <depth>0</depth>
-                        <hotspotX>0.657894731</hotspotX>
-                        <hotspotY>3.049999952</hotspotY>
+                        <hotspotX>0.515789449</hotspotX>
+                        <hotspotY>0.550000012</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -441,14 +483,14 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>365</x>
-                        <y>-320</y>
+                        <x>336</x>
+                        <y>-274</y>
                         <z>0</z>
                         <width>714</width>
                         <height>512</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.525210083</hotspotX>
+                        <hotspotY>0.46484375</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
