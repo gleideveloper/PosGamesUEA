@@ -4,6 +4,7 @@
     <name>Events</name>
     <events>
         <variable comment="Check if Foca is dead" constant="0" name="isDead" sid="434797337980951" static="0" type="number">0</variable>
+        <variable constant="0" name="CollisionRed" sid="198808840494661" static="0" type="number">0</variable>
         <variable constant="0" name="Score" sid="946808143519531" static="0" type="number">0</variable>
         <event-group description="" sid="141462722508340" title="Game">
             <sub-events>
@@ -28,10 +29,15 @@
                     <sub-events>
                         <event-block sid="881008726852610">
                             <conditions>
-                                <condition id="-14" name="Compare variable" sid="833924976723115" type="System">
+                                <condition disabled="1" id="-14" name="Compare variable" sid="833924976723115" type="System">
                                     <param id="0" name="Variable">isDead</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="300624366442131" type="System">
+                                    <param id="0" name="Variable">CollisionRed</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -43,6 +49,25 @@
                                 </action>
                                 <action behavior="Platform" id="11" name="Set enabled" sid="740792272531549" type="Foca">
                                     <param id="0" name="State">0</param>
+                                </action>
+                                <action id="2" name="Stop" sid="735587851018899" type="Foca" />
+                                <action behavior="Bullet" id="0" name="Set speed" sid="204933694715950" type="nota01">
+                                    <param id="0" name="Speed">0</param>
+                                </action>
+                                <action behavior="Bullet" id="0" name="Set speed" sid="610187616760818" type="nota02">
+                                    <param id="0" name="Speed">0</param>
+                                </action>
+                                <action behavior="Bullet" id="0" name="Set speed" sid="921451748186995" type="nota03">
+                                    <param id="0" name="Speed">0</param>
+                                </action>
+                                <action behavior="Bullet" id="0" name="Set speed" sid="884266221559478" type="nota04">
+                                    <param id="0" name="Speed">0</param>
+                                </action>
+                                <action behavior="Bullet" id="0" name="Set speed" sid="485421773458753" type="nota05">
+                                    <param id="0" name="Speed">0</param>
+                                </action>
+                                <action behavior="Bullet" id="0" name="Set speed" sid="742553451140778" type="nota06">
+                                    <param id="0" name="Speed">0</param>
                                 </action>
                                 <action id="-16" name="Wait" sid="652495301835497" type="System">
                                     <param id="0" name="Seconds">2.0</param>
@@ -198,12 +223,6 @@
                                 <condition id="0" name="On collision with another object" sid="410408333955827" type="Foca">
                                     <param id="0" name="Object">nota02</param>
                                 </condition>
-                                <condition id="0" name="On collision with another object" sid="972825082589746" type="Foca">
-                                    <param id="0" name="Object">nota03</param>
-                                </condition>
-                                <condition id="0" name="On collision with another object" sid="924046494745512" type="Foca">
-                                    <param id="0" name="Object">nota04</param>
-                                </condition>
                                 <condition id="0" name="On collision with another object" sid="934297184307282" type="Foca">
                                     <param id="0" name="Object">nota05</param>
                                 </condition>
@@ -222,6 +241,35 @@
                                 </action>
                                 <action id="3" name="Set progress" sid="385333833883743" type="ProgressBar">
                                     <param id="0" name="Value">Score</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-group description="" sid="734157200769481" title="Collision with Red" />
+                        <event-block any="1" sid="139643600384665">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="924046494745512" type="Foca">
+                                    <param id="0" name="Object">nota04</param>
+                                </condition>
+                                <condition id="0" name="On collision with another object" sid="972825082589746" type="Foca">
+                                    <param id="0" name="Object">nota03</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Add to" sid="466557822255398" type="System">
+                                    <param id="0" name="Variable">CollisionRed</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="0" name="Play" sid="870239013474933" type="Audio">
+                                    <param id="0" name="Audio file">Som VAIAS</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;vaias&quot;</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="763911221026809" type="System">
+                                    <param id="0" name="Seconds">1.5</param>
+                                </action>
+                                <action id="6" name="Stop" sid="592037478322952" type="Audio">
+                                    <param id="0" name="Tag">&quot;vaias&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -293,5 +341,9 @@
                 </event-group>
             </sub-events>
         </event-group>
+        <event-block sid="246541036169711">
+            <conditions />
+            <actions />
+        </event-block>
     </events>
 </c2eventsheet>
