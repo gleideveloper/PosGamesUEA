@@ -281,6 +281,28 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="SpritePlay" uid="20">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-156</x>
+                        <y>-338</y>
+                        <z>0</z>
+                        <width>166</width>
+                        <height>30</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>
@@ -300,6 +322,30 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
+                <instance type="ProgressBar" uid="16">
+                    <properties>
+                        <value>0</value>
+                        <maximum>100</maximum>
+                        <tooltip></tooltip>
+                        <initial-visibility>Visible</initial-visibility>
+                        <id-optional></id-optional>
+                    </properties>
+                    <instance-variables>
+                        <value>0</value>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>226</x>
+                        <y>20</y>
+                        <z>0</z>
+                        <width>178.19090271</width>
+                        <height>22.273862839</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                    </world>
+                </instance>
                 <instance type="GameOver" uid="8">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
@@ -462,30 +508,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="ProgressBar" uid="16">
-                    <properties>
-                        <value>0</value>
-                        <maximum>100</maximum>
-                        <tooltip></tooltip>
-                        <initial-visibility>Visible</initial-visibility>
-                        <id-optional></id-optional>
-                    </properties>
-                    <instance-variables>
-                        <value>0</value>
-                    </instance-variables>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>226</x>
-                        <y>20</y>
-                        <z>0</z>
-                        <width>178.19090271</width>
-                        <height>22.273862839</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                    </world>
-                </instance>
                 <instance type="Sprite" uid="0">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -579,6 +601,24 @@
                     </world>
                 </instance>
             </instances>
+            <effects />
+        </layer>
+        <layer name="splash" sid="705843711052782">
+            <initially-visible>1</initially-visible>
+            <background-color>255,255,255</background-color>
+            <transparent>1</transparent>
+            <parallax>
+                <x>1</x>
+                <y>1</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>1</opacity>
+            <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances />
             <effects />
         </layer>
     </layers>
