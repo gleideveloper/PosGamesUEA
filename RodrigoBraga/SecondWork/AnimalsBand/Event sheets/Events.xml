@@ -110,7 +110,7 @@
                 </event-group>
             </sub-events>
         </event-group>
-        <event-group description="" sid="188944076625597" title="Colision">
+        <event-group description="" disabled="1" sid="188944076625597" title="Colision">
             <sub-events>
                 <event-block any="1" disabled="1" sid="830532059040413">
                     <conditions>
