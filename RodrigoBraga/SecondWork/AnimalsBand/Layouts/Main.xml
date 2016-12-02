@@ -29,28 +29,19 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Background" uid="2">
+                <instance type="TiledBackground2" uid="2">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
+                        <hotspot>Top-left</hotspot>
                     </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Solid">
-                            <properties>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>0</x>
+                        <x>1</x>
                         <y>1</y>
                         <z>0</z>
-                        <width>640</width>
-                        <height>480</height>
+                        <width>655</width>
+                        <height>512</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -93,24 +84,22 @@
                         <opacity>0.300000012</opacity>
                     </world>
                 </instance>
-                <instance type="ground" uid="6">
+                <instance type="TiledBackground" uid="5">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
+                        <hotspot>Top-left</hotspot>
                     </properties>
                     <behavior-instances>
                         <behavior-instance type="Sine">
                             <properties>
                                 <active-on-start>Yes</active-on-start>
                                 <movement>Horizontal</movement>
-                                <wave>Sawtooth</wave>
-                                <period>1</period>
+                                <wave>Triangle</wave>
+                                <period>2</period>
                                 <period-random>0</period-random>
                                 <period-offset>0</period-offset>
                                 <period-offset-random>0</period-offset-random>
-                                <magnitude>-114</magnitude>
+                                <magnitude>-14</magnitude>
                                 <magnitude-random>0</magnitude-random>
                             </properties>
                         </behavior-instance>
@@ -123,14 +112,54 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>323</x>
-                        <y>455</y>
+                        <x>-64.866851807</x>
+                        <y>360.004333496</y>
                         <z>0</z>
-                        <width>1041</width>
-                        <height>118</height>
+                        <width>753</width>
+                        <height>91</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="TiledBackground" uid="6">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <hotspot>Top-left</hotspot>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Sine">
+                            <properties>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Horizontal</movement>
+                                <wave>Triangle</wave>
+                                <period>2</period>
+                                <period-random>0</period-random>
+                                <period-offset>0</period-offset>
+                                <period-offset-random>0</period-offset-random>
+                                <magnitude>14</magnitude>
+                                <magnitude-random>0</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-62.667388916</x>
+                        <y>392.248779297</y>
+                        <z>0</z>
+                        <width>753</width>
+                        <height>91</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -185,14 +214,14 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>68.853622437</x>
-                        <y>214.557891846</y>
+                        <x>131.145248413</x>
+                        <y>222.618865967</y>
                         <z>0</z>
-                        <width>37.836975098</width>
-                        <height>53.889026642</height>
+                        <width>60.768474579</width>
+                        <height>57.32875061</height>
                         <depth>0</depth>
-                        <hotspotX>0.484848499</hotspotX>
-                        <hotspotY>0.553191483</hotspotY>
+                        <hotspotX>0.490566045</hotspotX>
+                        <hotspotY>0.439999998</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

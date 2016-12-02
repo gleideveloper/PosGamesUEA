@@ -69,7 +69,17 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="159257688000311" speed="5">
-                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Workspace\PosGamesUEA\RodrigoBraga\SecondWork\AnimalsBand\Assets\bg-nao-animado.png" />
+                    <frame duration="1" hotspotX="-0.217391" hotspotY="-0.00414938" original-source="C:\Workspace\PosGamesUEA\RodrigoBraga\SecondWork\AnimalsBand\Assets\asset-luzes.png">
+                        <collision-poly>
+                            <point x="1" y="0.245163" />
+                            <point x="1" y="0.247294" />
+                            <point x="1" y="0.507261" />
+                            <point x="1" y="0.364493" />
+                            <point x="1" y="0.618067" />
+                            <point x="1" y="0.364493" />
+                            <point x="1" y="0.507261" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -85,8 +95,8 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="4" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="756071255332404" speed="8">
-                    <frame duration="1" hotspotX="0.484848" hotspotY="0.553191" />
                     <frame duration="1" hotspotX="0.490566" hotspotY="0.44" original-source="E:\games\AnimalsBand\assets\player\foca.jpg" />
+                    <frame duration="1" hotspotX="0.484848" hotspotY="0.553191" />
                     <frame duration="1" hotspotX="0.666667" hotspotY="0.510638" />
                     <frame duration="1" hotspotX="0.509434" hotspotY="0.5" />
                 </animation>
@@ -230,21 +240,21 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="ground" sid="241349703279612">
-            <plugin id="Sprite" />
+        <object-type name="TiledBackground" sid="868123837169110">
+            <plugin id="TiledBg" />
             <behaviors>
-                <behavior-type name="Sine" sid="283632388418235">
+                <behavior-type name="Sine" sid="846905083449196">
                     <behavior id="Sin" />
                 </behavior-type>
-                <behavior-type name="Solid" sid="857795867042367">
+                <behavior-type name="Solid" sid="735082015350127">
                     <behavior id="solid" />
                 </behavior-type>
             </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="290730167697014" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
+            <texture />
+        </object-type>
+        <object-type name="TiledBackground2" sid="417095089358181">
+            <plugin id="TiledBg" />
+            <texture />
         </object-type>
     </object-folder>
     <families />

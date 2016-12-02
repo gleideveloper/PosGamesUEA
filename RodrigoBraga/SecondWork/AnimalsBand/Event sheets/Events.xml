@@ -64,43 +64,48 @@
             <sub-events>
                 <event-group description="" sid="309266706958283" title="Moviment Foca">
                     <sub-events>
-                        <event-block sid="166264576866223">
+                        <event-block sid="626977091073605">
                             <conditions>
-                                <condition id="0" name="On key pressed" sid="240186989993563" type="Keyboard">
+                                <condition id="0" name="On key pressed" sid="660768420918900" type="Keyboard">
                                     <param id="0" name="Key">32 (Space)</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="288334314157718" type="System">
+                                    <param id="0" name="Variable">isDead</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action behavior="Platform" id="9" name="Set vector Y" sid="606639571630325" type="Foca">
+                                <action behavior="Platform" id="9" name="Set vector Y" sid="309173288483101" type="Foca">
                                     <param id="0" name="Vector Y">-650</param>
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block disabled="1" sid="617795859668656">
+                        <event-block sid="912905791810099">
                             <conditions>
-                                <condition id="-8" name="Compare two values" sid="261152099774553" type="System">
+                                <condition id="-8" name="Compare two values" sid="200926620774799" type="System">
                                     <param id="0" name="First value">Foca.Platform.VectorY</param>
                                     <param id="1" name="Comparison">2</param>
                                     <param id="2" name="Second value">0</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-20" name="Rotate toward angle" sid="545088330126234" type="Foca">
+                                <action id="-20" name="Rotate toward angle" sid="577851101057260" type="Foca">
                                     <param id="0" name="Degrees">10</param>
                                     <param id="1" name="Angle">-45</param>
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block disabled="1" sid="745630097114731">
+                        <event-block sid="266840874034425">
                             <conditions>
-                                <condition id="-8" name="Compare two values" sid="956827254754608" type="System">
+                                <condition id="-8" name="Compare two values" sid="216846740999227" type="System">
                                     <param id="0" name="First value">Foca.Platform.VectorY</param>
                                     <param id="1" name="Comparison">4</param>
                                     <param id="2" name="Second value">0</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-20" name="Rotate toward angle" sid="485903069100291" type="Foca">
+                                <action id="-20" name="Rotate toward angle" sid="335669226916219" type="Foca">
                                     <param id="0" name="Degrees">10</param>
                                     <param id="1" name="Angle">45</param>
                                 </action>
@@ -217,7 +222,7 @@
                                     <param id="0" name="Object to create">nota06</param>
                                     <param id="1" name="Layer">&quot;Background&quot;</param>
                                     <param id="2" name="X">700</param>
-                                    <param id="3" name="Y">380</param>
+                                    <param id="3" name="Y">360</param>
                                 </action>
                             </actions>
                         </event-block>
