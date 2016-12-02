@@ -25,7 +25,7 @@
                         </event-block>
                     </sub-events>
                 </event-group>
-                <event-group description="" sid="531162933465761" title="Game Over">
+                <event-group description="" sid="531162933465761" title="Game Over and Restart">
                     <sub-events>
                         <event-block sid="881008726852610">
                             <conditions>
