@@ -170,60 +170,6 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="cat" sid="154134808125062">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="8" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="556036831553843" speed="5">
-                    <frame duration="1" hotspotX="0.708772" hotspotY="0.513447" original-source="E:\games\AnimalsBand\assets\cat\Fall (1).png">
-                        <collision-poly>
-                            <point x="0.126316" y="0.190709" />
-                            <point x="0.708772" y="0.127139" />
-                            <point x="0.947368" y="0.430318" />
-                            <point x="0.97193" y="0.513447" />
-                            <point x="0.947368" y="0.596577" />
-                            <point x="0.708772" y="0.892421" />
-                            <point x="0.242105" y="0.755501" />
-                            <point x="0.0807017" y="0.513447" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.696864" hotspotY="0.493151" original-source="E:\games\AnimalsBand\assets\cat\Fall (2).png" />
-                    <frame duration="1" hotspotX="0.6633" hotspotY="0.509217" original-source="E:\games\AnimalsBand\assets\cat\Fall (3).png" />
-                    <frame duration="1" hotspotX="0.699301" hotspotY="0.505855" original-source="E:\games\AnimalsBand\assets\cat\Fall (4).png" />
-                    <frame duration="1" hotspotX="0.708772" hotspotY="0.50358" original-source="E:\games\AnimalsBand\assets\cat\Fall (5).png" />
-                    <frame duration="1" hotspotX="0.696864" hotspotY="0.505855" original-source="E:\games\AnimalsBand\assets\cat\Fall (6).png" />
-                    <frame duration="1" hotspotX="0.665541" hotspotY="0.509217" original-source="E:\games\AnimalsBand\assets\cat\Fall (7).png" />
-                    <frame duration="1" hotspotX="0.699301" hotspotY="0.505855" original-source="E:\games\AnimalsBand\assets\cat\Fall (8).png" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="dog" sid="327476585376259">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="10" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="923241420477127" speed="5">
-                    <frame duration="1" hotspotX="0.602374" hotspotY="0.410995" original-source="E:\games\AnimalsBand\assets\dog\Hurt (1).png">
-                        <collision-poly>
-                            <point x="0.0860534" y="0.0418848" />
-                            <point x="0.599407" y="0.0340314" />
-                            <point x="0.875371" y="0.253927" />
-                            <point x="0.952522" y="0.408377" />
-                            <point x="0.830861" y="0.526178" />
-                            <point x="0.599407" y="0.981675" />
-                            <point x="0.350148" y="0.544503" />
-                            <point x="0.106825" y="0.408377" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.453988" hotspotY="0.453883" original-source="E:\games\AnimalsBand\assets\dog\Hurt (2).png" />
-                    <frame duration="1" hotspotX="0.386167" hotspotY="0.484091" original-source="E:\games\AnimalsBand\assets\dog\Hurt (3).png" />
-                    <frame duration="1" hotspotX="0.349333" hotspotY="0.461905" original-source="E:\games\AnimalsBand\assets\dog\Hurt (4).png" />
-                    <frame duration="1" hotspotX="0.354749" hotspotY="0.36236" original-source="E:\games\AnimalsBand\assets\dog\Hurt (5).png" />
-                    <frame duration="1" hotspotX="0.341808" hotspotY="0.338192" original-source="E:\games\AnimalsBand\assets\dog\Hurt (6).png" />
-                    <frame duration="1" hotspotX="0.315642" hotspotY="0.297297" original-source="E:\games\AnimalsBand\assets\dog\Hurt (7).png" />
-                    <frame duration="1" hotspotX="0.346939" hotspotY="0.4047" original-source="E:\games\AnimalsBand\assets\dog\Hurt (8).png" />
-                    <frame duration="1" hotspotX="0.500914" hotspotY="0.50104" original-source="E:\games\AnimalsBand\assets\dog\Hurt (9).png" />
-                    <frame duration="1" hotspotX="0.500914" hotspotY="0.50104" original-source="E:\games\AnimalsBand\assets\dog\Hurt (10).png" />
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="Audio" sid="358184628564798">
             <plugin id="Audio" />
         </object-type>
@@ -237,7 +183,7 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="702483107410886" speed="5">
-                    <frame duration="1" hotspotX="0.52521" hotspotY="0.464844" original-source="E:\games\PosGamesUEA\RodrigoBraga\SecondWork\AnimalsBand\Assets\assets-animals-band.png">
+                    <frame duration="1" hotspotX="0.52521" hotspotY="0.464844" original-source="C:\Workspace\PosGamesUEA\RodrigoBraga\SecondWork\AnimalsBand\Assets\assets-animals-band.png">
                         <collision-poly>
                             <point x="0.0322129" y="0.0449219" />
                             <point x="0.5" y="0.591797" />
@@ -283,10 +229,6 @@
                     <frame duration="1" hotspotX="0.47619" hotspotY="0.571429" />
                 </animation>
             </animation-folder>
-        </object-type>
-        <object-type name="TiledBackground" sid="275774450322418">
-            <plugin id="TiledBg" />
-            <texture />
         </object-type>
         <object-type name="ground" sid="241349703279612">
             <plugin id="Sprite" />

@@ -141,7 +141,7 @@
                                 <action id="-3" name="Create object" sid="522510304731722" type="System">
                                     <param id="0" name="Object to create">nota01</param>
                                     <param id="1" name="Layer">&quot;Background&quot;</param>
-                                    <param id="2" name="X">970</param>
+                                    <param id="2" name="X">700</param>
                                     <param id="3" name="Y">int(random(100,120))</param>
                                 </action>
                             </actions>
@@ -156,7 +156,7 @@
                                 <action id="-3" name="Create object" sid="187500570896347" type="System">
                                     <param id="0" name="Object to create">nota02</param>
                                     <param id="1" name="Layer">&quot;Background&quot;</param>
-                                    <param id="2" name="X">970</param>
+                                    <param id="2" name="X">700</param>
                                     <param id="3" name="Y">int(random(150,160))</param>
                                 </action>
                             </actions>
@@ -171,7 +171,7 @@
                                 <action id="-3" name="Create object" sid="562652911700509" type="System">
                                     <param id="0" name="Object to create">nota03</param>
                                     <param id="1" name="Layer">&quot;Background&quot;</param>
-                                    <param id="2" name="X">970</param>
+                                    <param id="2" name="X">700</param>
                                     <param id="3" name="Y">int(random(190,200))</param>
                                 </action>
                             </actions>
@@ -186,7 +186,7 @@
                                 <action id="-3" name="Create object" sid="885184370112935" type="System">
                                     <param id="0" name="Object to create">nota04</param>
                                     <param id="1" name="Layer">&quot;Background&quot;</param>
-                                    <param id="2" name="X">970</param>
+                                    <param id="2" name="X">700</param>
                                     <param id="3" name="Y">int(random(230,240))</param>
                                 </action>
                             </actions>
@@ -201,7 +201,7 @@
                                 <action id="-3" name="Create object" sid="683510030373402" type="System">
                                     <param id="0" name="Object to create">nota05</param>
                                     <param id="1" name="Layer">&quot;Background&quot;</param>
-                                    <param id="2" name="X">970</param>
+                                    <param id="2" name="X">700</param>
                                     <param id="3" name="Y">int(random(270,280))</param>
                                 </action>
                             </actions>
@@ -216,7 +216,7 @@
                                 <action id="-3" name="Create object" sid="557280775791950" type="System">
                                     <param id="0" name="Object to create">nota06</param>
                                     <param id="1" name="Layer">&quot;Background&quot;</param>
-                                    <param id="2" name="X">970</param>
+                                    <param id="2" name="X">700</param>
                                     <param id="3" name="Y">380</param>
                                 </action>
                             </actions>
