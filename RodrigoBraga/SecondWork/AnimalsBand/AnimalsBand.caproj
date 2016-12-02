@@ -254,8 +254,29 @@
         <object-type name="Sprite2" sid="579524539629048">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="184230507283315" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                <animation framecount="13" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="184230507283315" speed="5">
+                    <frame duration="3" hotspotX="0.5" hotspotY="0.621212" original-source="C:\Users\Gleides\Pictures\Assets_Breakout\breakout-blocks.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.5" />
+                            <point x="0.875" y="0.666667" />
+                            <point x="0.5" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.517241" hotspotY="0.515152" />
+                    <frame duration="1" hotspotX="0.517241" hotspotY="0.515152" />
+                    <frame duration="1" hotspotX="0.517241" hotspotY="0.515152" />
+                    <frame duration="1" hotspotX="0.517241" hotspotY="0.515152" />
+                    <frame duration="1" hotspotX="0.517241" hotspotY="0.515152" />
+                    <frame duration="1" hotspotX="0.517241" hotspotY="0.515152" />
+                    <frame duration="1" hotspotX="0.517241" hotspotY="0.515152" />
+                    <frame duration="1" hotspotX="0.517241" hotspotY="0.515152" />
+                    <frame duration="1" hotspotX="0.517241" hotspotY="0.515152" />
+                    <frame duration="1" hotspotX="0.517241" hotspotY="0.515152" />
+                    <frame duration="1" hotspotX="0.517241" hotspotY="0.515152" />
+                    <frame duration="1" hotspotX="0.517241" hotspotY="0.515152" />
                 </animation>
             </animation-folder>
         </object-type>
