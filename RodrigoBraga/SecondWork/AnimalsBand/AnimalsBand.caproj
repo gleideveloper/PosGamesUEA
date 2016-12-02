@@ -60,29 +60,6 @@
             </behaviors>
             <texture original-source="C:\Workspace\PosGamesUEA\RodrigoBraga\SecondWork\AnimalsBand\Assets\bg-notas.png" />
         </object-type>
-        <object-type name="Background" sid="969673410602085">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Solid" sid="743431805522580">
-                    <behavior id="solid" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="159257688000311" speed="5">
-                    <frame duration="1" hotspotX="-0.217391" hotspotY="-0.00414938" original-source="C:\Workspace\PosGamesUEA\RodrigoBraga\SecondWork\AnimalsBand\Assets\asset-luzes.png">
-                        <collision-poly>
-                            <point x="1" y="0.245163" />
-                            <point x="1" y="0.247294" />
-                            <point x="1" y="0.507261" />
-                            <point x="1" y="0.364493" />
-                            <point x="1" y="0.618067" />
-                            <point x="1" y="0.364493" />
-                            <point x="1" y="0.507261" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="Foca" sid="646827717242888">
             <plugin id="Sprite" />
             <behaviors>
@@ -252,9 +229,35 @@
             </behaviors>
             <texture />
         </object-type>
-        <object-type name="TiledBackground2" sid="417095089358181">
+        <object-type name="TiledGround" sid="417095089358181">
             <plugin id="TiledBg" />
             <texture />
+        </object-type>
+        <object-type name="BgLight" sid="550691854425557">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="937942731983560" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Workspace\PosGamesUEA\RodrigoBraga\SecondWork\AnimalsBand\Assets\asset-luzes.png">
+                        <collision-poly>
+                            <point x="0.182812" y="0.24375" />
+                            <point x="0.815625" y="0.245833" />
+                            <point x="0.898438" y="0.5" />
+                            <point x="0.520312" y="0.360417" />
+                            <point x="0.5" y="0.608333" />
+                            <point x="0.479688" y="0.360417" />
+                            <point x="0.103125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite2" sid="579524539629048">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="184230507283315" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />

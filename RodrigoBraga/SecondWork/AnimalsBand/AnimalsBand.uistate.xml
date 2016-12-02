@@ -28,7 +28,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="sound-folder/" />
         <folder expanded="1" path="music-folder/" />
         <folder expanded="0" path="file-folder/Icons/" />
-        <folder expanded="1" path="animation-folder/Background/" />
         <folder expanded="1" path="animation-folder/Foca/" />
         <folder expanded="1" path="animation-folder/GameOver/" />
         <folder expanded="1" path="animation-folder/nota01/" />
@@ -38,5 +37,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Sprite/" />
         <folder expanded="1" path="animation-folder/nota05/" />
         <folder expanded="1" path="animation-folder/nota06/" />
+        <folder expanded="1" path="animation-folder/BgLight/" />
+        <folder expanded="1" path="animation-folder/Sprite2/" />
     </folders-expanded>
 </c2uistate>

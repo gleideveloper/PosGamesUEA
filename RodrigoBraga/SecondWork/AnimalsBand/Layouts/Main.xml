@@ -29,7 +29,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="TiledBackground2" uid="2">
+                <instance type="TiledGround" uid="2">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -37,7 +37,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1</x>
+                        <x>-6</x>
                         <y>1</y>
                         <z>0</z>
                         <width>655</width>
@@ -72,8 +72,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-452</x>
-                        <y>9</y>
+                        <x>-453.466339111</x>
+                        <y>-0.526748657</y>
                         <z>0</z>
                         <width>1536</width>
                         <height>284</height>
@@ -82,6 +82,28 @@
                         <hotspotY>0</hotspotY>
                         <angle>0</angle>
                         <opacity>0.300000012</opacity>
+                    </world>
+                </instance>
+                <instance type="BgLight" uid="13">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>319.903106689</x>
+                        <y>239.797485352</y>
+                        <z>0</z>
+                        <width>640</width>
+                        <height>480</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
                     </world>
                 </instance>
                 <instance type="TiledBackground" uid="5">
@@ -112,8 +134,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-64.866851807</x>
-                        <y>360.004333496</y>
+                        <x>-69.264831543</x>
+                        <y>388.746948242</y>
                         <z>0</z>
                         <width>753</width>
                         <height>91</height>
@@ -124,42 +146,24 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TiledBackground" uid="6">
+                <instance type="Sprite2" uid="6">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
-                        <hotspot>Top-left</hotspot>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
                     </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Sine">
-                            <properties>
-                                <active-on-start>Yes</active-on-start>
-                                <movement>Horizontal</movement>
-                                <wave>Triangle</wave>
-                                <period>2</period>
-                                <period-random>0</period-random>
-                                <period-offset>0</period-offset>
-                                <period-offset-random>0</period-offset-random>
-                                <magnitude>14</magnitude>
-                                <magnitude-random>0</magnitude-random>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="Solid">
-                            <properties>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-62.667388916</x>
-                        <y>392.248779297</y>
+                        <x>-130.25881958</x>
+                        <y>494.024200439</y>
                         <z>0</z>
-                        <width>753</width>
-                        <height>91</height>
+                        <width>250</width>
+                        <height>250</height>
                         <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -260,11 +264,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>68</x>
-                        <y>36</y>
+                        <x>50.411708832</x>
+                        <y>36.427841187</y>
                         <z>0</z>
-                        <width>127.599372864</width>
-                        <height>53.166404724</height>
+                        <width>92.422782898</width>
+                        <height>70.022087097</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -449,7 +453,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>151</x>
-                        <y>28</y>
+                        <y>20</y>
                         <z>0</z>
                         <width>178.19090271</width>
                         <height>22.273862839</height>

@@ -118,11 +118,7 @@
         <event-group description="" disabled="1" sid="188944076625597" title="Colision">
             <sub-events>
                 <event-block any="1" disabled="1" sid="830532059040413">
-                    <conditions>
-                        <condition id="0" name="On collision with another object" sid="282477371852215" type="Foca">
-                            <param id="0" name="Object">Background</param>
-                        </condition>
-                    </conditions>
+                    <conditions />
                     <actions>
                         <action id="-9" name="Set value" sid="862477065707152" type="System">
                             <param id="0" name="Variable">isDead</param>
