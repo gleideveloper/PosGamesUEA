@@ -13,10 +13,8 @@
         <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
-        <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
-        <plugin author="Scirra" id="progressbar" version="1">Progress bar</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
@@ -91,8 +89,31 @@
         <object-type name="GameOver" sid="571204776715279">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="575152439395586" speed="5">
-                    <frame duration="1" hotspotX="0.515789" hotspotY="0.55" />
+                <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="575152439395586" speed="5">
+                    <frame duration="1" hotspotX="0.521739" hotspotY="0.564103" original-source="E:\games\PosGamesUEA\RodrigoBraga\SecondWork\AnimalsBand\Assets\GAMEOVER1-SPRITE.png">
+                        <collision-poly>
+                            <point x="0.321739" y="0.474359" />
+                            <point x="0.495652" y="0.0512821" />
+                            <point x="0.713043" y="0.423077" />
+                            <point x="0.686957" y="0.5" />
+                            <point x="0.973913" y="0.961538" />
+                            <point x="0.495652" y="0.602564" />
+                            <point x="0.0347826" y="0.948718" />
+                            <point x="0.278261" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.521739" hotspotY="0.564103" original-source="E:\games\PosGamesUEA\RodrigoBraga\SecondWork\AnimalsBand\Assets\GAMEOVER2-SPRITE.png">
+                        <collision-poly>
+                            <point x="0.321739" y="0.474359" />
+                            <point x="0.495652" y="0.0512821" />
+                            <point x="0.713043" y="0.423077" />
+                            <point x="0.686957" y="0.5" />
+                            <point x="0.973913" y="0.961538" />
+                            <point x="0.495652" y="0.602564" />
+                            <point x="0.0347826" y="0.948718" />
+                            <point x="0.278261" y="0.5" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -163,12 +184,6 @@
         <object-type name="Audio" sid="358184628564798">
             <plugin id="Audio" />
         </object-type>
-        <object-type name="ProgressBar" sid="371311310554813">
-            <plugin id="progressbar" />
-            <instance-variables>
-                <instance-variable name="value" sid="304498368263434" type="number" />
-            </instance-variables>
-        </object-type>
         <object-type name="Sprite" sid="377925260694337">
             <plugin id="Sprite" />
             <animation-folder>
@@ -220,18 +235,6 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="TiledBackground" sid="868123837169110">
-            <plugin id="TiledBg" />
-            <behaviors>
-                <behavior-type name="Sine" sid="846905083449196">
-                    <behavior id="Sin" />
-                </behavior-type>
-                <behavior-type name="Solid" sid="735082015350127">
-                    <behavior id="solid" />
-                </behavior-type>
-            </behaviors>
-            <texture />
-        </object-type>
         <object-type name="TiledGround" sid="417095089358181">
             <plugin id="TiledBg" />
             <texture />
@@ -274,7 +277,7 @@
         <object-type name="CachorroBanda" sid="214590573408673">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="552252558907161" speed="5">
+                <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="552252558907161" speed="7">
                     <frame duration="1" hotspotX="0.513043" hotspotY="0.504951" />
                     <frame duration="1" hotspotX="0.513043" hotspotY="0.504951" />
                 </animation>
@@ -358,9 +361,29 @@
         <object-type name="Mouse" sid="968932159731970">
             <plugin id="Mouse" />
         </object-type>
-        <object-type name="Particles" sid="919192086810655">
-            <plugin id="Particles" />
-            <texture original-source="E:\games\PosGamesUEA\RodrigoBraga\SecondWork\AnimalsBand\Assets\smoke.jpg" />
+        <object-type name="BackgroundGameOver" sid="961402979375113">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="911715744753918" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ProgressMusic" sid="754004166219527">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="519594299379488" speed="5">
+                    <frame duration="1" hotspotX="0.478814" hotspotY="0.484848" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ProgressIncrement" sid="364085010156557">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="213180313408257" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0.48" />
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />

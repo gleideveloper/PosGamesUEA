@@ -10,10 +10,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout active="1" order="2">Main</layout>
         <layout order="0">StartScreen</layout>
-        <event-sheet order="3">Events</event-sheet>
+        <layout active="1" order="2">Main</layout>
         <event-sheet order="1">Event sheet startscreen</event-sheet>
+        <event-sheet order="3">Events</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -47,5 +47,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/TelaInicial/" />
         <folder expanded="1" path="animation-folder/SpritePlay/" />
         <folder expanded="1" path="animation-folder/Play/" />
+        <folder expanded="1" path="animation-folder/BackgroundGameOver/" />
+        <folder expanded="1" path="animation-folder/ProgressMusic/" />
+        <folder expanded="1" path="animation-folder/ProgressIncrement/" />
     </folders-expanded>
 </c2uistate>

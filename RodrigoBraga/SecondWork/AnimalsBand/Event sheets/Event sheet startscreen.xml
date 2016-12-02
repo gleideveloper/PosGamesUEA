@@ -8,6 +8,7 @@
                 <condition id="-2" name="On start of layout" sid="489317201801417" type="System" />
             </conditions>
             <actions>
+                <action id="33" name="Stop all" sid="832053197462695" type="Audio" />
                 <action id="0" name="Play" sid="770462603356425" type="Audio">
                     <param id="0" name="Audio file">LisaSaxSoloBakerStree</param>
                     <param id="2" name="Loop">1</param>
@@ -25,22 +26,23 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="451681305682492">
+        <event-block sid="516807651065505">
             <conditions>
-                <condition id="6" name="On object clicked" sid="751981611916643" type="Mouse">
-                    <param id="0" name="Mouse button">0</param>
-                    <param id="1" name="Click type">0</param>
-                    <param id="2" name="Object clicked">Play</param>
+                <condition id="0" name="On key pressed" sid="238691770318033" type="Keyboard">
+                    <param id="0" name="Key">32 (Space)</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="5" name="Set frame" sid="525623449683794" type="Play">
+                <action id="5" name="Set frame" sid="436557959050709" type="Play">
                     <param id="0" name="Frame number">1</param>
                 </action>
-                <action id="-2" name="Go to layout" sid="906250252534847" type="System">
+                <action id="-16" name="Wait" sid="343566269120965" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="837342960900194" type="System">
                     <param id="0" name="Layout">Main</param>
                 </action>
-                <action id="33" name="Stop all" sid="539791617888971" type="Audio" />
+                <action id="33" name="Stop all" sid="318151358500571" type="Audio" />
             </actions>
         </event-block>
     </events>
