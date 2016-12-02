@@ -148,6 +148,72 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="CachorroBanda" uid="5">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>336</x>
+                        <y>328</y>
+                        <z>0</z>
+                        <width>115</width>
+                        <height>101</height>
+                        <depth>0</depth>
+                        <hotspotX>0.513043463</hotspotX>
+                        <hotspotY>0.504950523</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="GatoBanda" uid="7">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>567</x>
+                        <y>327</y>
+                        <z>0</z>
+                        <width>105</width>
+                        <height>98</height>
+                        <depth>0</depth>
+                        <hotspotX>0.523809552</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="FocaBanda" uid="14">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>454</x>
+                        <y>326</y>
+                        <z>0</z>
+                        <width>112</width>
+                        <height>112</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.526785731</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>
@@ -430,14 +496,14 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>399</x>
-                        <y>-295</y>
+                        <x>444</x>
+                        <y>-532</y>
                         <z>0</z>
                         <width>714</width>
                         <height>512</height>
                         <depth>0</depth>
-                        <hotspotX>0.525210083</hotspotX>
-                        <hotspotY>0.46484375</hotspotY>
+                        <hotspotX>0.680672288</hotspotX>
+                        <hotspotY>0.12890625</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
