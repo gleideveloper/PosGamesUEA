@@ -76,7 +76,7 @@
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block sid="617795859668656">
+                        <event-block disabled="1" sid="617795859668656">
                             <conditions>
                                 <condition id="-8" name="Compare two values" sid="261152099774553" type="System">
                                     <param id="0" name="First value">Foca.Platform.VectorY</param>
@@ -91,7 +91,7 @@
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block sid="745630097114731">
+                        <event-block disabled="1" sid="745630097114731">
                             <conditions>
                                 <condition id="-8" name="Compare two values" sid="956827254754608" type="System">
                                     <param id="0" name="First value">Foca.Platform.VectorY</param>

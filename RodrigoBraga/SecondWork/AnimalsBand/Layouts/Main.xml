@@ -4,8 +4,8 @@
     <sid>709116179524481</sid>
     <event-sheet>Events</event-sheet>
     <size>
-        <width>640</width>
-        <height>480</height>
+        <width>1024</width>
+        <height>1024</height>
     </size>
     <margins>
         <horizontal>500</horizontal>
@@ -69,7 +69,7 @@
                                 <active-on-start>Yes</active-on-start>
                                 <movement>Horizontal</movement>
                                 <wave>Sawtooth</wave>
-                                <period>2</period>
+                                <period>1</period>
                                 <period-random>0</period-random>
                                 <period-offset>0</period-offset>
                                 <period-offset-random>0</period-offset-random>
@@ -81,11 +81,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-200</x>
-                        <y>1</y>
+                        <x>-452</x>
+                        <y>9</y>
                         <z>0</z>
-                        <width>1028</width>
-                        <height>325</height>
+                        <width>1536</width>
+                        <height>284</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -483,8 +483,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>336</x>
-                        <y>-274</y>
+                        <x>378</x>
+                        <y>-281</y>
                         <z>0</z>
                         <width>714</width>
                         <height>512</height>

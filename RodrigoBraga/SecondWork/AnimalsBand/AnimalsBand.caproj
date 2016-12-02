@@ -58,7 +58,7 @@
                     <behavior id="Sin" />
                 </behavior-type>
             </behaviors>
-            <texture />
+            <texture original-source="C:\Workspace\PosGamesUEA\RodrigoBraga\SecondWork\AnimalsBand\Assets\bg-notas.png" />
         </object-type>
         <object-type name="Background" sid="969673410602085">
             <plugin id="Sprite" />
