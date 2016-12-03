@@ -8,12 +8,11 @@ Make using Construct 2.
 - A idéia foi baseada nos movimentos do FlappyBird com uma referencia de jogo do GuitarHero.
 
 # Personagens
-Temos 3 personagens que formam a banda AnimalsBand foram idealizados a parti do vídeo da Foca da meia, abaixo o link do youtube.
+Temos 3 personagens que formam a banda AnimalsBand, foram idealizados a partir do vídeo da Foca da meia, conforme o link do youtube [#Foca da Meia-Noite](https://www.youtube.com/channel/UCJiMCxLM1sN8hzp1j-z7U9w).
+
 1. Foca no Saxofone;
 2. Cachorro na Baterra;
 3. Gato nos Teclados.
-
-[#Foca da Meia-Noite](https://www.youtube.com/channel/UCJiMCxLM1sN8hzp1j-z7U9w)  
 
 # Instruções do Jogo
 -....
@@ -23,8 +22,8 @@ Temos 3 personagens que formam a banda AnimalsBand foram idealizados a parti do 
 
 # Contributors
 
-###* [@gleidesigner](https://github.com/gleidesigner) Developer
-###* [@jbalves](https://github.com/jbalves) Developer
-###* [@joshaguiar](https://github.com/joshaguiar) Game Artist
+### [@gleidesigner](https://github.com/gleidesigner) Developer
+### [@jbalves](https://github.com/jbalves) Developer
+### [@joshaguiar](https://github.com/joshaguiar) Game Artist
 
 # UEA PÓS-GAMES 2016 - LUDUS
