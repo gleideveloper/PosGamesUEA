@@ -1,8 +1,8 @@
-# Star Guardians
+# Animals Band
 
 A game Galaxian clone using Construct 2.
 
-![ScreenShot](https://raw.github.com/gleidesigner/GameGalaxian/master/assets/banner/banner-imagem2.jpg?raw=true "Optional title")
+![ScreenShot](https://raw.github.com/gleidesigner/PosGamesUEA/blob/master/RodrigoBraga/SecondWork/AnimalsBand/Assets/bannner-animals-band.png?raw=true "Optional title")
 
 # Live Demonstration
 [- Try it now!](https://jbalves.github.io/StarGuardians/)
