@@ -19,6 +19,7 @@
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="Rotate" version="1">Rotate</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
         <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
         <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
@@ -120,11 +121,11 @@
         <object-type name="nota01" sid="638878300393760">
             <plugin id="Sprite" />
             <behaviors>
-                <behavior-type name="Bullet" sid="730405081890143">
-                    <behavior id="Bullet" />
-                </behavior-type>
                 <behavior-type name="DestroyOutsideLayout" sid="909901505620055">
                     <behavior id="destroy" />
+                </behavior-type>
+                <behavior-type name="Rotate" sid="343796496805010">
+                    <behavior id="Rotate" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
@@ -382,6 +383,19 @@
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="213180313408257" speed="5">
                     <frame duration="1" hotspotX="0" hotspotY="0.48" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="GroundFoca" sid="580710254559758">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="148621377465988">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="801728745665075" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
         </object-type>

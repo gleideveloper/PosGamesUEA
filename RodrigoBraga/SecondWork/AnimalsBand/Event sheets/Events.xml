@@ -62,9 +62,6 @@
                                     <param id="0" name="State">0</param>
                                 </action>
                                 <action id="2" name="Stop" sid="735587851018899" type="Foca" />
-                                <action behavior="Bullet" id="0" name="Set speed" sid="204933694715950" type="nota01">
-                                    <param id="0" name="Speed">0</param>
-                                </action>
                                 <action behavior="Bullet" id="0" name="Set speed" sid="610187616760818" type="nota02">
                                     <param id="0" name="Speed">0</param>
                                 </action>
@@ -399,9 +396,6 @@
                     <param id="0" name="State">0</param>
                 </action>
                 <action id="2" name="Stop" sid="936173459286323" type="Foca" />
-                <action behavior="Bullet" id="0" name="Set speed" sid="146792990343719" type="nota01">
-                    <param id="0" name="Speed">0</param>
-                </action>
                 <action behavior="Bullet" id="0" name="Set speed" sid="702348375964781" type="nota02">
                     <param id="0" name="Speed">0</param>
                 </action>
