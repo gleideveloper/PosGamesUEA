@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="40" height="15" tilewidth="32" tileheight="32" nextobjectid="19">
+ <tileset firstgid="1" name="tileset" tilewidth="32" tileheight="32" tilecount="102" columns="6">
+  <image source="tileset-platformer.png" width="192" height="544"/>
+ </tileset>
+ <layer name="Parallax" width="40" height="15">
+  <data encoding="base64" compression="zlib">
+   eJztkUsKgDAMRHsNrfgpPYUrPYe/+9/CCBVCbBJtFy504FHQzmSixvz6moa3Cyga3y6g6O+XJ61fT85UTcCc4JP6lYBFVDfyuD0WYGVmSLlcv8PXAl2gBpyQpe2yRfqdM2K5Uh7thuGy8H0fTnyPfj/qcaQXne9QV/rOm2vPCuVJu1iGmKeIPK+ZbI1zdm4O9jUZeanzNfC/aRJ9OTzZawfhHx8K
+  </data>
+ </layer>
+ <layer name="Foreground" width="40" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYBiewBiITYDYdIS7gdaABYhZkTAbnewFhS0x4cqNBQ8mYI8FjwIEQE9f1EpjvEDMTwVzsKUvaqQxYSAWpYI5I819sHjF5T5YesKWhrDJUdt9jEDMhITRAT47YOLIeYINSTwCitH1BkMxLoCcF9iBmAMJo+c9fPkQWzhhy7/I2A+Ig6DYjwi70N2HK35g2BoJE1KLDfsh+c8PjzoeHO4DADnmC88=
+  </data>
+ </layer>
+</map>
