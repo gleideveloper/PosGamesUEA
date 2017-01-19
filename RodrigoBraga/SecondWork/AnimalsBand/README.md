@@ -2,7 +2,7 @@
 
 Make using Construct 2.
 
-![ScreenShot](https://github.com/gleidesigner/PosGamesUEA/blob/master/RodrigoBraga/SecondWork/AnimalsBand/Assets/bannner-animals-band.png?raw=true"Optional title")
+![ScreenShot](https://github.com/gleidesigner/PosGamesUEA/blob/master/RodrigoBraga/SecondWork/AnimalsBand/Assets/banner/bannner-animals-band.png?raw=true"Optional title")
 
 # A concepção do Jogo
 - A idéia foi baseada nos movimentos do FlappyBird com uma referencia de jogo do GuitarHero.
@@ -14,11 +14,11 @@ Temos 3 personagens que formam a banda AnimalsBand, foram idealizados a partir d
 2. Cachorro na Baterra;
 3. Gato nos Teclados.
 
-# Instruções do Jogo
--....
-
 # Live Demonstration
 [- Try it now!](https://jbalves.github.io/AnimalsBand/)
+
+# Instruções do Jogo
+- Barra de Espaço para pular e pegar as moedas
 
 # Contributors
 

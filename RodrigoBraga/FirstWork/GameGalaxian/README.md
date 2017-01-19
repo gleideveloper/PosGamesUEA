@@ -2,10 +2,14 @@
 
 A game Galaxian clone using Construct 2.
 
-![ScreenShot](https://raw.github.com/gleidesigner/GameGalaxian/master/assets/banner/banner-imagem2.jpg?raw=true "Optional title")
+![ScreenShot](https://github.com/gleidesigner/PosGamesUEA/blob/master/RodrigoBraga/FirstWork/GameGalaxian/assets/banner/banner-star-gardians.jpg?raw=true "Optional title")
 
 # Live Demonstration
 [- Try it now!](https://jbalves.github.io/StarGuardians/)
+
+# Instruções do Jogo
+- Barra de Espaço para atirar
+- Seta esquedar/direta mover
 
 # Contributors
 
