@@ -1,11 +1,11 @@
 # TucuMan
 
-A game Galaxian clone using Construct 2.
+Platform game using Construct 2.
 
 ![ScreenShot](https://github.com/gleidesigner/PosGamesUEA/blob/master/RodrigoBraga/ThirdWork/TucuMan/Assets/banner/banner-TucuMan.png?raw=true "Optional title")
 
 # Live Demonstration
-[- Try it now!](https://jbalves.github.io/StarGuardians/)
+[- Try it now!](https://jbalves.github.io/Tucuman/)
 
 # Instruções do Jogo
 - [Atirar] Barra de Espaço
